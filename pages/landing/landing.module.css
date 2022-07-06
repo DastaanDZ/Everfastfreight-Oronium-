@@ -1,0 +1,44 @@
+.title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+
+}
+.content{
+
+}
+.button_container{
+    display: flex;
+}
+.explore{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 132px;
+    height: 46px;
+    background: #FED130;
+    border-radius: 45px;
+    outline: none;
+    box-shadow: none;
+    margin-right: 0.7rem;
+}
+.services{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 137px;
+    height: 46px;
+    border: 1px solid #000000;
+    border-radius: 45px;
+    outline: none;
+    box-shadow: none;
+}
+.videoplayer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem;
+}

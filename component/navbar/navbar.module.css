@@ -1,0 +1,28 @@
+.navbar_container{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: 100%;
+}
+.logo_container{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 3.2rem;
+    width: 3.2rem;
+    margin-right: 0.7rem;
+}
+.ul{
+    display: flex;
+    list-style: none;
+}
+.li{
+    margin-left: 1rem;
+}
+.para{
+    margin:0px ;
+}
