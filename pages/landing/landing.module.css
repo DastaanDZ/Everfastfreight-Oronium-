@@ -4,12 +4,12 @@
     flex-direction: column;
     align-items: center;
 }
-.heading{
+/* .heading{
 
 }
 .content{
 
-}
+} */
 .button_container{
     display: flex;
 }
@@ -41,4 +41,7 @@
     align-items: center;
     justify-content: center;
     margin: 3rem 0rem;
+}
+.btn_text{
+    margin-right: 0.5rem;
 }

@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Landing from './landing'
 import Page2 from './page2'
+import Page3 from './page3'
+import Page4 from './page4'
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       </Head>
       <Landing/>
       <Page2/>
+      <Page3/>
+      <Page4/>
     </div>
   )
 }
