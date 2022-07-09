@@ -1,6 +1,13 @@
 .container{
     display: flex;
     width: 100%;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.card_container{
+    display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -16,13 +23,15 @@
     margin-right: 0px;
 }
 .bullet{
+}
+.logo_container{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 3px;
-    width: 40px;
-    height: 40px;
-    background: #0053D6;
-    border-radius: 100%;
-    color: white;
+}
+.logo{
+    width: 173.21px;
+    height: 60.21px;
+}
+.para{
+    margin:0px ;
 }

@@ -3,8 +3,6 @@
     height: 15vh;
     align-items: center;
     justify-content: space-between;
-    padding-left: 4rem;
-    padding-right: 4rem;
     width: 100%;
 }
 .logo_container{
@@ -12,9 +10,8 @@
     align-items: center;
 }
 .logo{
-    height: 3.2rem;
-    width: 3.2rem;
-    margin-right: 0.7rem;
+    width: 173.21px;
+    height: 60.21px;
 }
 .ul{
     display: flex;
@@ -22,6 +19,7 @@
 }
 .li{
     margin-left: 1rem;
+    margin-bottom: 0px;
 }
 .para{
     margin:0px ;

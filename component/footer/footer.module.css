@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content:space-between;
+    background: #F3FEFF;
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+}
+.left{
+    width: 30%;
+}
+.right{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+.part1,.part2{
+    list-style: none;
+    margin-right: 1rem;
+}
+.logo{
+    width: 173.21px;
+    height: 60.21px;
+}
+.ul{
+    list-style: none;
+    padding: 0px;
+}

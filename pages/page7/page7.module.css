@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    width: 100%;
+    background: #180F23;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.left{
+    width: 30%;
+    color: white;
+    margin-right: 2rem;
+}
+.right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.award{
+    width: 107.94px;
+height: 90.15px;
+margin-right: 3rem;
+margin-bottom: 3rem;
+}
