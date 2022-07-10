@@ -14,6 +14,8 @@ align-items: center;
     height: 46px;
     background: #FED130;
     border-radius: 50px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
 }
 .info{
     display: flex;
@@ -32,6 +34,7 @@ align-items: center;
     border-radius: 100%;
     object-fit: cover;
     object-position: center;
+    margin-right: 0.5rem;
 }
 .content{
     display: flex;
@@ -44,4 +47,20 @@ align-items: center;
 }
 .right{
     width: 35%;
+}
+.heading{
+    font-family: 'Newsreader', serif;
+    font-size: 56px;
+}
+.desc{
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+.services_types{
+    font-family: 'Newsreader', serif;
+    font-size: 36px;
+}
+.services_info{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
 }

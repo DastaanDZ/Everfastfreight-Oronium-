@@ -1,9 +1,12 @@
+
 .navbar_container{
     display: flex;
     height: 15vh;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
 }
 .logo_container{
     display: flex;

@@ -9,11 +9,11 @@ const Footer = () => {
     <div className={styles.container}>
         <div className={styles.left}>
             <img src={logo.src} className={styles.logo} alt="" />
-            <p>© 2022 - Everfast Forwarders Pvt. Ltd.</p>
+            <p className={styles.logo_desc}>© 2022 - Everfast Forwarders Pvt. Ltd.</p>
         </div>
         <div className={styles.right}>
             <div className={styles.part1}>
-                <p>Jump to</p>
+                <p className={styles.heading}>Jump to</p>
                 <ul className={styles.ul}>
                     <li>About</li>
                     <li>News</li>
@@ -23,7 +23,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className={styles.part2}>
-                <p>Legal</p>
+                <p className={styles.heading}>Legal</p>
                 <ul className={styles.ul}>
                     <li>Privacy Policy</li>
                     <li>Terms of Services</li>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </ul>
             </div>
             <div className={styles.part3}>
-                <p>Social</p>
+                <p className={styles.heading}>Social</p>
                 <ul className={styles.ul}>
                     <li><BsFacebook/> <p>Facebook</p></li>
                     <li><BsTwitter/> <p>Twitter</p></li>

@@ -27,4 +27,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+}
+.heading{
+    font-family: 'Newsreader', serif;
+    font-size: 56px;
+
+}
+.desc{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 21px;
 }

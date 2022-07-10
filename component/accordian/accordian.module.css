@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 26px;
+    margin-bottom: 1.3rem;
 }
 .circle{
     display: flex;
@@ -12,4 +15,12 @@
     background: #D248AC;
     border-radius: 100%;
     cursor: pointer;
+}
+.ans{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+.ques_ans_container{
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #E7E7E7;
 }

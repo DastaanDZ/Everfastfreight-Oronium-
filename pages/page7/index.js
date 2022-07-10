@@ -7,8 +7,8 @@ const index = () => {
     <>
     <div className={styles.container}>
         <div className={styles.left}>
-            <p>Award</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, fuga!</p>
+            <p className={styles.heading}>Award</p>
+            <p className={styles.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, fuga!</p>
         </div>
         <div className={styles.right}>
             <img className={styles.award} src={award.src} alt="" />

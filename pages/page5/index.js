@@ -8,8 +8,8 @@ const index = () => {
     <>
     <div className={styles.container}>
         <div className={styles.title}>
-            <p>Services</p>
-            <p>Nibh massa ut sodales amet ac eleifend non tempor.</p>
+            <p className={styles.heading}>Services</p>
+            <p className={styles.desc}>Nibh massa ut sodales amet ac eleifend non tempor.</p>
             <div className={styles.btn}>
             <p>GET IN TOUCH</p>
             <BsArrowRight/>
@@ -21,10 +21,10 @@ const index = () => {
                 <div key={index} className={styles.content}>
                 <div className={styles.left}>
                     <img src={items.pic.src} className={styles.pic} alt="" />
-                    <p>{items.title}</p>
+                    <p className={styles.services_types}>{items.title}</p>
                 </div>
                 <div className={styles.right}>
-                    <p>{items.info}</p>
+                    <p className={styles.services_info}>{items.info}</p>
                 </div>
             </div>
             )

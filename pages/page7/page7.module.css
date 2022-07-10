@@ -12,15 +12,26 @@
     margin-right: 2rem;
 }
 .right{
-    width: 40%;
+    width: 45%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 .award{
-    width: 107.94px;
-height: 90.15px;
+    width: 141.62px;
+height: 141.62px;
 margin-right: 3rem;
 margin-bottom: 3rem;
+}
+.heading{
+    font-family: 'Newsreader', serif;
+    font-size: 64px;
+}
+.desc{
+    font-size: 18px;
+line-height: 23px;
+
+color: rgba(255, 255, 255, 0.6);
+font-family: 'DM Sans', sans-serif;
 }

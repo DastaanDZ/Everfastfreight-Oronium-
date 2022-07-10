@@ -4,12 +4,15 @@
     flex-direction: column;
     align-items: center;
 }
-/* .heading{
-
+.heading{
+    font-family: 'Newsreader', serif;
+    font-size: 64px;
 }
 .content{
-
-} */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
 .button_container{
     display: flex;
 }
@@ -24,6 +27,8 @@
     outline: none;
     box-shadow: none;
     margin-right: 0.7rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
 }
 .services{
     display: flex;
@@ -35,6 +40,8 @@
     border-radius: 45px;
     outline: none;
     box-shadow: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
 }
 .videoplayer{
     display: flex;

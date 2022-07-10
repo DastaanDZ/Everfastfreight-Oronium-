@@ -20,6 +20,7 @@ const Accordian = (item) => {
     // }
   return (
     <>
+    <div className={styles.ques_ans_container}> 
     <div className={styles.ques}>
         <p>{item.ques}</p>
         <div className={styles.circle} onClick={() => setShow(!show)}> 
@@ -27,6 +28,7 @@ const Accordian = (item) => {
         </div> 
     </div>
     {show && <p className={styles.ans}>{item.ans}</p> }
+    </div>
     </>
   )
 }

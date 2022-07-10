@@ -33,6 +33,9 @@
 }
 .lmtext{
     margin-right: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #0053D6;
 }
 .more_news_circle{
     display: flex;
@@ -45,9 +48,23 @@
 }
 .mntext{
     margin-right: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
 }
 .title{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.heading{
+    font-family: 'Newsreader', serif;
+    font-size: 56px;
+}
+.news_title{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+.news_desc{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
 }

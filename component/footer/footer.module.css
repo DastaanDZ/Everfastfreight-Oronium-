@@ -25,3 +25,17 @@
     list-style: none;
     padding: 0px;
 }
+.logo_desc{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+.heading{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+.ul{
+    
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+color: rgba(0, 0, 0, 0.7);
+}
