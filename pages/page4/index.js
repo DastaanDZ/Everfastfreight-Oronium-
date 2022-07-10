@@ -28,6 +28,39 @@ const index = () => {
             </div>
             </div>
         </div>
+        <div className={styles.news}> 
+            <img src={n1.src} className={styles.img} alt="" />
+            <p className={styles.news_title}>ANNOUCEMENT</p>
+            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
+            <div className={styles.learnmore}> 
+            <p className={styles.lmtext}>Learn More</p>
+            <div className={styles.learn_more_circle}>
+            <BsArrowRight/>
+            </div>
+            </div>
+        </div>
+        <div className={styles.news}> 
+            <img src={n1.src} className={styles.img} alt="" />
+            <p className={styles.news_title}>ANNOUCEMENT</p>
+            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
+            <div className={styles.learnmore}> 
+            <p className={styles.lmtext}>Learn More</p>
+            <div className={styles.learn_more_circle}>
+            <BsArrowRight/>
+            </div>
+            </div>
+        </div>
+        <div className={styles.news}> 
+            <img src={n1.src} className={styles.img} alt="" />
+            <p className={styles.news_title}>ANNOUCEMENT</p>
+            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
+            <div className={styles.learnmore}> 
+            <p className={styles.lmtext}>Learn More</p>
+            <div className={styles.learn_more_circle}>
+            <BsArrowRight/>
+            </div>
+            </div>
+        </div>
         </div>
     </div>
     </>

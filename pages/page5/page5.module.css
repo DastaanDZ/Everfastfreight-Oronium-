@@ -51,10 +51,12 @@ align-items: center;
 .heading{
     font-family: 'Newsreader', serif;
     font-size: 56px;
+    margin-bottom: 0.5rem;
 }
 .desc{
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1rem;
 }
 .services_types{
     font-family: 'Newsreader', serif;

@@ -35,12 +35,15 @@
     color: white;
     font-family: 'Newsreader', serif;
     font-size: 18px;
+    margin-bottom: 2rem;
 }
 .title{
     font-family: 'Newsreader', serif;
     font-size: 40px;
+    margin-bottom: 1rem;
 }
 .description{
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
 }

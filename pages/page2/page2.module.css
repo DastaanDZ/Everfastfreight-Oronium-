@@ -29,11 +29,12 @@
     align-items: center;
     font-size: 14px;
     font-family: 'DM Sans', sans-serif;
+    margin-bottom: 1.8rem;
 }
 .heading{
     font-family: 'Newsreader', serif;
     font-size: 56px;
-
+    margin-bottom: 1.3rem;
 }
 .desc{
     font-family: 'DM Sans', sans-serif;

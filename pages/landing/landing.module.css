@@ -7,11 +7,14 @@
 .heading{
     font-family: 'Newsreader', serif;
     font-size: 64px;
+    width: 75%;
+    margin-bottom: 1.3rem;
 }
 .content{
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 1.3rem;
 }
 .button_container{
     display: flex;

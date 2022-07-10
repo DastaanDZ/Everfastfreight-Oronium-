@@ -17,7 +17,7 @@
     width: 30%;
     border-bottom: 2px solid black;
     margin-right: 5rem;
-    height: 18rem;
+    height: auto;
 }
 .card1{
     border-bottom: 4px solid #26B567;
@@ -32,10 +32,8 @@
     margin-right: 0px;
 }
 .bullet{
-    width: 34px;
-height: 26px;
-
-background: #BABABA;
+    font-size: 5rem;
+color: #BABABA;
 }
 .logo_container{
     display: flex;
@@ -52,8 +50,10 @@ background: #BABABA;
 .title{
     font-family: 'Newsreader', serif;
     font-size: 56px;
+    margin-bottom: 3rem;
 }
 .description{
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    margin-bottom: 3rem;
 }

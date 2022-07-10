@@ -6,12 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .news{
     width: 20%;
     text-align: left;
-
+    margin-right: 2rem;
 }
 .img{
     width: 270px;
@@ -19,6 +19,7 @@
     border-radius: 0px 0px 40px 0px;
     object-fit: cover;
     object-position: center;
+    margin-bottom: 1rem;
 }
 .learn_more_circle{
     width: 22px;
@@ -63,8 +64,10 @@
 .news_title{
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
+    margin-bottom: 0.5rem;
 }
 .news_desc{
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
+    margin-bottom: 1rem;
 }
