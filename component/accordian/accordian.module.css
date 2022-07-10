@@ -1,0 +1,15 @@
+.ques{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: #D248AC;
+    border-radius: 100%;
+    cursor: pointer;
+}

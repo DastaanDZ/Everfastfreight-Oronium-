@@ -1,0 +1,16 @@
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+
+    background: #F3D951;
+    border-radius: 100%;
+}
+.title{
+    display: flex;
+}
+.description{
+    
+}

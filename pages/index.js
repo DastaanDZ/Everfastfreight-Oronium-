@@ -12,6 +12,7 @@ import Page8 from './page8'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from '../component/footer/Footer'
+import Faqs from '../component/faqs/Faqs'
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
       <Page6/>
       <Page7/>
       <Page8/>
+      <Faqs/>
       <Footer/>
     </div>
   )
