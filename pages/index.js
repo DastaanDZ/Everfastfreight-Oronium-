@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.space}></div>
       <News/>
       <div className={styles.space}></div>
-      {/* <Services/>
+      <Services/>
       <div className={styles.space}></div>
       <Testimonials/>
       <div className={styles.space}></div>
@@ -41,7 +41,7 @@ export default function Home() {
       <div className={styles.space}></div>
       <Faqs/>
       <div className={styles.space}></div>
-      <Footer/> */}
+      {/* <Footer/> */}
     </div>
   )
 }
