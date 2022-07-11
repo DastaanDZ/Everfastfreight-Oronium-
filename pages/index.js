@@ -29,9 +29,9 @@ export default function Home() {
       <div className={styles.space}></div>
       <Cards/>
       <div className={styles.space}></div>
-      {/* <News/>
+      <News/>
       <div className={styles.space}></div>
-      <Services/>
+      {/* <Services/>
       <div className={styles.space}></div>
       <Testimonials/>
       <div className={styles.space}></div>
