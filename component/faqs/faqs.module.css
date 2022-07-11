@@ -4,14 +4,17 @@
     align-items: center;
     width: 42px;
     height: 42px;
-
     background: #F3D951;
     border-radius: 100%;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
 }
 .title{
     display: flex;
     font-family: 'Newsreader', serif;
         font-size: 56px;
+    align-items: center;
+    /* justify-content: center; */
 }
 .description{
     
