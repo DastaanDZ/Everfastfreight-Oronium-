@@ -41,7 +41,7 @@ export default function Home() {
       <div className={styles.space}></div>
       <Faqs/>
       <div className={styles.space}></div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
