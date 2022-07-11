@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <Landing/>
       <div className={styles.space_about}></div>
-      <AboutUs/>
+      {/* <AboutUs/>
       <div className={styles.space}></div>
       <Cards/>
       <div className={styles.space}></div>
@@ -41,7 +41,7 @@ export default function Home() {
       <div className={styles.space}></div>
       <Faqs/>
       <div className={styles.space}></div>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
