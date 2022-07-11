@@ -27,9 +27,9 @@ export default function Home() {
       <div className={styles.space_about}></div>
       <AboutUs/>
       <div className={styles.space}></div>
-      {/* <Cards/>
+      <Cards/>
       <div className={styles.space}></div>
-      <News/>
+      {/* <News/>
       <div className={styles.space}></div>
       <Services/>
       <div className={styles.space}></div>
