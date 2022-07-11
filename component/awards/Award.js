@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './page7.module.css'
+import styles from './award.module.css'
 import award from '../../assets/images/award.png'
 
 const index = () => {

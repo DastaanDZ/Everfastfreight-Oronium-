@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import Landing from './landing'
-import Page2 from './page2'
-import Page3 from './page3'
-import Page4 from './page4'
-import Page5 from './page5'
-import Page6 from './page6'
-import Page7 from './page7'
-import Page8 from './page8'
+import Landing from '../component/landing/landing'
+import AboutUs from '../component/aboutus/AboutUs'
+import Cards from '../component/cards/Card'
+import News from '../component/news/News'
+import Services from '../component/services/Services'
+import Testimonials from '../component/testimonials/Testimonials'
+import Awards from '../component/awards/Award'
+import Gallery from '../component/gallery/Gallery'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,14 +24,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Landing/>
-      <Page2/>
-      <Page3/>
-      <Page4/>
-      <Page5/>
-      <Page6/>
-      <Page7/>
-      <Page8/>
+      <div className={styles.space}></div>
+      <AboutUs/>
+      <div className={styles.space}></div>
+      <Cards/>
+      <div className={styles.space}></div>
+      <News/>
+      <div className={styles.space}></div>
+      <Services/>
+      <div className={styles.space}></div>
+      <Testimonials/>
+      <div className={styles.space}></div>
+      <Awards/>
+      <div className={styles.space}></div>
+      <Gallery/>
+      <div className={styles.space}></div>
       <Faqs/>
+      <div className={styles.space}></div>
       <Footer/>
     </div>
   )

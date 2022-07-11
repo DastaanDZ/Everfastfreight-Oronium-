@@ -11,6 +11,8 @@ const Faqs = () => {
             <p>5</p>
         </div>
     </div>
+    <div className={styles.space}></div>
+    
     <div className={styles.description}>
      {data.map((items, index) => {
             return(

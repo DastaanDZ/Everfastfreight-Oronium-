@@ -19,14 +19,13 @@
     flex-wrap: wrap;
 }
 .award{
-    width: 141.62px;
-height: 141.62px;
+height: 7rem;
 margin-right: 3rem;
 margin-bottom: 3rem;
 }
 .heading{
     font-family: 'Newsreader', serif;
-    font-size: 64px;
+    font-size: 56px;
 }
 .desc{
     font-size: 18px;

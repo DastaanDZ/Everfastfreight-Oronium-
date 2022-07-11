@@ -1,6 +1,6 @@
 import React from 'react'
 import hero from '../../assets/images/hero.png'
-import styles from './page2.module.css'
+import styles from './aboutus.module.css'
 
 const index = () => {
   return (

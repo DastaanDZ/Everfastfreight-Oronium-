@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import styles from './page8.module.css'
+import styles from './gallery.module.css'
 import hero from '../../assets/images/warehouse.png'
 import n1 from '../../assets/images/warehouse.png'
 import Head from 'next/head'

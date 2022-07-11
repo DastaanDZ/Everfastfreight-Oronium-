@@ -9,7 +9,7 @@
     flex-direction: column;
     width: 30%;
     margin-right: 5rem;
-    height: 18rem;
+    height: auto;
 }
 .card1{
     border-bottom: 4px solid #26B567;

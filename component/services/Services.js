@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../../assets/data/Services'
-import styles from './page5.module.css'
+import styles from './services.module.css'
 import { BsArrowRight } from 'react-icons/bs';
 
 const index = () => {
@@ -15,6 +15,8 @@ const index = () => {
             <BsArrowRight/>
             </div>
         </div>
+        <div className={styles.space}></div>
+        
         <div className={styles.info}>
         {data.map((items, index) => {
             return(

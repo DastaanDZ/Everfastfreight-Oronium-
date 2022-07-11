@@ -11,8 +11,11 @@
 .title{
     display: flex;
     font-family: 'Newsreader', serif;
-        font-size: 64px;
+        font-size: 56px;
 }
 .description{
     
+}
+.space{
+    margin: 2.3rem;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './page4.module.css'
+import styles from './news.module.css'
 import n1 from '../../assets/images/n1.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 
@@ -16,6 +16,9 @@ const index = () => {
             </div>
             </div>
     </div>
+
+    <div className={styles.space}></div>
+    
         <div className={styles.news_container}>
         <div className={styles.news}> 
             <img src={n1.src} className={styles.img} alt="" />

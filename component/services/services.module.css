@@ -42,11 +42,11 @@ align-items: center;
     justify-content: space-between;
     width: 100%;
     background: #F3FEFF;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);;
 }
 .right{
-    width: 35%;
+    width: 47%;
 }
 .heading{
     font-family: 'Newsreader', serif;
@@ -65,4 +65,9 @@ align-items: center;
 .services_info{
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+}
+.space{
+    margin: 2.3rem;
 }
