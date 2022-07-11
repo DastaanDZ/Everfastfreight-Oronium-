@@ -25,9 +25,9 @@ export default function Home() {
       </Head>
       <Landing/>
       <div className={styles.space_about}></div>
-      {/* <AboutUs/>
+      <AboutUs/>
       <div className={styles.space}></div>
-      <Cards/>
+      {/* <Cards/>
       <div className={styles.space}></div>
       <News/>
       <div className={styles.space}></div>
