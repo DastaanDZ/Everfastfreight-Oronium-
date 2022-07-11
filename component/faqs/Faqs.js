@@ -5,6 +5,7 @@ import Accordian from '../accordian/Accordian';
 const Faqs = () => {
   return (
     <>
+    <div className={styles.container}> 
     <div className={styles.title}>
         <p>FAQs</p>
         <div className={styles.circle}>
@@ -15,11 +16,12 @@ const Faqs = () => {
     
     <div className={styles.description}>
      {data.map((items, index) => {
-            return(
+       return(
                 <Accordian key={index} {...items}/>
             )
         })}
     </div>
+              </div>
     </>
   )
 }
