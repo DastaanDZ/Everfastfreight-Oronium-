@@ -24,7 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Landing/>
-      <div className={styles.space}></div>
+      <div className={styles.space_about}></div>
       <AboutUs/>
       <div className={styles.space}></div>
       <Cards/>

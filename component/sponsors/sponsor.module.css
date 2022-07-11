@@ -7,3 +7,22 @@
     align-items: center;
     padding: 0 4rem;
 }
+
+@media (max-width: 1220px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+    .sponsor_container{
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+}

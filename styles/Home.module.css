@@ -1,3 +1,11 @@
 .space{
     margin: 6rem;
 }
+.space_about{
+    margin: 6rem;
+}
+@media (max-width: 768px) {
+    .space_about{
+        margin: 0;
+    }
+}
