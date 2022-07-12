@@ -83,6 +83,9 @@ color: #BABABA;
     .container{
         padding: 0 2rem;
     }
+    .title{
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 550px) {

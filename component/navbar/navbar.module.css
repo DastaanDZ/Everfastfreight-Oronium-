@@ -42,6 +42,9 @@
     .ul{
         display: none;
     }
+    .navbar_container{
+        padding: 0 2rem;
+    }
 }
 
 
