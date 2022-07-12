@@ -62,17 +62,18 @@
 }
 
 @media (max-width: 1024px) {
+    
 }
 
 @media (max-width: 900px) {
+    .card1{
+        margin-right: 0%;
+    }
 }
 
 @media (max-width: 768px) {
     .container{
         padding: 0 2rem;
-    }
-    .card1{
-        margin-right: 0px;
     }
 }
 

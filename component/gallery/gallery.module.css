@@ -43,3 +43,27 @@
 /* .img{
     width: 100%;
 } */
+.img{
+    width: 250;
+    height: 250;
+    object-fit: contain;
+}
+
+@media (max-width: 1220px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 930px) {
+    .container{
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 550px) {
+}

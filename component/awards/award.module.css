@@ -4,7 +4,8 @@
     background: #180F23;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: auto;
+    padding: 0 4rem;
 }
 .left{
     width: 30%;
@@ -33,4 +34,38 @@ line-height: 23px;
 
 color: rgba(255, 255, 255, 0.6);
 font-family: 'DM Sans', sans-serif;
+}
+
+@media (max-width: 1220px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 900px) {
+    .container{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+    .left{
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+        margin: 3rem 0;
+    }
+    .right{
+        width: 100%;
+
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .award{
+        margin-right: 0%;
+    }
+}
+
+
+@media (max-width: 550px) {
 }

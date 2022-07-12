@@ -72,3 +72,31 @@ align-items: center;
 .space{
     margin: 2.3rem;
 }
+
+@media (max-width: 1220px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 768px) {
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        margin-bottom: 2rem;
+    }
+    .container{
+        padding: 0 2rem;
+    }
+    .right{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 550px) {
+}

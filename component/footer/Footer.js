@@ -15,29 +15,29 @@ const Footer = () => {
             <div className={styles.part1}>
                 <p className={styles.heading}>Jump to</p>
                 <ul className={styles.ul}>
-                    <li>About</li>
-                    <li>News</li>
-                    <li>Testimonials</li>
-                    <li>Services</li>
-                    <li>FAQs</li>
+                    <li className={styles.li}>About</li>
+                    <li className={styles.li}>News</li>
+                    <li className={styles.li}>Testimonials</li>
+                    <li className={styles.li}>Services</li>
+                    <li className={styles.li}>FAQs</li>
                 </ul>
             </div>
             <div className={styles.part2}>
                 <p className={styles.heading}>Legal</p>
                 <ul className={styles.ul}>
-                    <li>Privacy Policy</li>
-                    <li>Terms of Services</li>
-                    <li>Licenses</li>
-                    <li>Permits</li>
+                    <li className={styles.li}>Privacy Policy</li>
+                    <li className={styles.li}>Terms of Services</li>
+                    <li className={styles.li}>Licenses</li>
+                    <li className={styles.li}>Permits</li>
                 </ul>
             </div>
             <div className={styles.part3}>
                 <p className={styles.heading}>Social</p>
                 <ul className={styles.ul}>
-                    <li><BsFacebook/> <p>Facebook</p></li>
-                    <li><BsTwitter/> <p>Twitter</p></li>
-                    <li><BsLinkedin/> <p>Linkedin</p></li>
-                    <li><BsYoutube/> <p>Youtube</p></li>
+                    <li className={styles.li}><BsFacebook/> <p>Facebook</p></li>
+                    <li className={styles.li}><BsTwitter/> <p>Twitter</p></li>
+                    <li className={styles.li}><BsLinkedin/> <p>Linkedin</p></li>
+                    <li className={styles.li}><BsYoutube/> <p>Youtube</p></li>
                 </ul>
             </div>
         </div>

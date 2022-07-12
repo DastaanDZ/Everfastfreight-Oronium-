@@ -21,8 +21,10 @@ const Accordian = (item) => {
   return (
     <>
     <div className={styles.ques_ans_container}> 
-    <div className={styles.ques}>
+    <div className={styles.ques_container}>
+    <div className={styles.ques}> 
         <p>{item.ques}</p>
+    </div>
         <div className={styles.circle} onClick={() => setShow(!show)}> 
         {show? <AiOutlineMinus/>:<AiOutlinePlus/>}
         </div> 
