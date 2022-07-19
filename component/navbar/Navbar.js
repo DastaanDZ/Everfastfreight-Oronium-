@@ -29,11 +29,12 @@ const Navbar = () => {
           <img src={logo.src} className={styles.logo} alt="" />
           <AiOutlineClose/>
         </div>
-            <li className={styles.li}>About</li>
-            <li className={styles.li}>News</li>
             <li className={styles.li}>Services</li>
-            <li className={styles.li}>Testimonials</li>
-            <li className={styles.li}>FAQs</li>
+            <li className={styles.li}>About</li>
+            <li className={styles.li}>Location(Office)</li>
+            <li className={styles.li}>Track</li>
+            <li className={styles.li}>Career</li>
+            <li className={styles.li}>Contact</li>
         </ul>
     </div>
     </>
