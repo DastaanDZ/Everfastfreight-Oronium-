@@ -25,7 +25,7 @@ const Landing = () => {
     <div className={styles.videoplayer}>
       <VideoPlayer/>
     </div>
-    <Sponsor/>
+    {/* <Sponsor/> */}
     </>
   )
 }

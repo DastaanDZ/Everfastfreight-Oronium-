@@ -15,6 +15,7 @@ import Footer from '../component/footer/Footer'
 import Faqs from '../component/faqs/Faqs'
 
 import axios from 'axios';
+import Sponsor from '../component/sponsors/Sponsor'
 
 
 export default function Home({news,gallery}) {
@@ -30,6 +31,8 @@ export default function Home({news,gallery}) {
       <Landing/>
       <div className={styles.space_about}></div>
       <AboutUs/>
+      <div className={styles.space}></div>
+      <Sponsor/>
       <div className={styles.space}></div>
       <Cards/>
       <div className={styles.space}></div>
