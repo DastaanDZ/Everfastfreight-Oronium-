@@ -9,8 +9,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+const API_URL = 'http://localhost:1337'
 
-const index = () => {
+const index = (props) => {
+
+  console.log(props.props[0].attributes.Memories.data[0].attributes.url)
+  const gallery = props.props[0].attributes.Memories.data
 
   const ref  = useRef(null)
   console.log(ref)
@@ -67,24 +71,13 @@ const index = () => {
     <Slider 
     ref={ref}
     {...settings}>
-      <div className={styles.img_container}>
-        <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={n1.src} alt="" />
-      </div>
-      <div className={styles.img_container}>
-      <img style={{ width: 250 ,height: 250, objectFit: 'contain'}} src={hero.src} alt="" />
-      </div>
-      <div className={styles.img_container}>
-      <img style={{ width: 250 ,height: 250, objectFit: 'contain'}} src={n1.src} alt="" />
-      </div>
-      <div className={styles.img_container}>
-      <img style={{ width: 250 ,height: 250, objectFit: 'contain'}} src={hero.src} alt="" />
-      </div>
-      <div className={styles.img_container}>
-      <img style={{ width: 250 ,height: 250, objectFit: 'contain'}} src={n1.src} alt="" />
-      </div>
-      <div className={styles.img_container}>
-      <img style={{ width: 250 ,height: 250, objectFit: 'contain'}} src={n1.src} alt="" />
-      </div>
+              {gallery.map((items, index) => {
+            return(
+              <div key={index} className={styles.img_container}>
+  <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={`${API_URL}${items.attributes.url} `} alt="" />
+</div>
+            )
+        })}
     </Slider>
 
     </div>
@@ -93,3 +86,5 @@ const index = () => {
 }
 
 export default index
+
+

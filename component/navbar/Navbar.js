@@ -2,11 +2,18 @@ import logo from '../../assets/images/logo.png'
 import styles from './navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
+
+  const style = {
+      left: toggle? '0' : '-100%',
+      '@media (maxWidth: 768px)': { 
+        opacity: toggle? '1': '0'
+      },
+    };
 
   return (
     <>
@@ -17,7 +24,7 @@ const Navbar = () => {
         <div className={styles.close} onClick={() => {setToggle(!toggle)}}> 
         <GiHamburgerMenu/>
         </div>
-        <ul className={styles.ul} style={{left: toggle? '0' : '-100%', opacity: toggle? '1': '0'}} onClick={() => {setToggle(!toggle)}}>
+        <ul className={styles.ul} style={style} onClick={() => {setToggle(!toggle)}}>
         <div className={styles.header}>
           <img src={logo.src} className={styles.logo} alt="" />
           <AiOutlineClose/>

@@ -14,8 +14,12 @@ import "slick-carousel/slick/slick-theme.css";
 import Footer from '../component/footer/Footer'
 import Faqs from '../component/faqs/Faqs'
 
+import axios from 'axios';
 
-export default function Home() {
+
+export default function Home({news,gallery}) {
+  // console.log('gallery',news)
+  // console.log('news',gallery)
   return (
     <div className={styles.container}>
       <Head>
@@ -29,7 +33,7 @@ export default function Home() {
       <div className={styles.space}></div>
       <Cards/>
       <div className={styles.space}></div>
-      <News/>
+      <News props={news.data}/>
       <div className={styles.space}></div>
       <Services/>
       <div className={styles.space}></div>
@@ -37,11 +41,52 @@ export default function Home() {
       <div className={styles.space}></div>
       <Awards/>
       <div className={styles.space}></div>
-      <Gallery/>
+      <Gallery props={gallery.data}/>
       <div className={styles.space}></div>
       <Faqs/>
       <div className={styles.space}></div>
       <Footer/>
     </div>
   )
+}
+
+// export async function getStaticProps() {
+
+//   const newsRes = await axios.get('http://localhost:1337/api/news?populate=*');
+
+//   return {
+//       props: {
+//         news: newsRes.data,
+//       },
+//   }
+// }
+// export async function getStaticProps() {
+
+//   const galleryRes = await axios.get('http://localhost:1337/api/galleries?populate=*');
+
+//   return {
+//       props: {
+//         gallery: galleryRes.data,
+//       },
+//   }
+// }
+
+// export async function getStaticProps() {
+
+//   const [newsRes,galleryRes] = await Promise.all([axios.get('http://localhost:1337/api/galleries?populate=*'),axios.get('http://localhost:1337/api/galleries?populate=*')]);
+
+//   return {
+//       props: {newsRes,galleryRes}}
+//   }
+
+export async function getServerSideProps() {
+  const [newsRes, galleryRes] = await Promise.all([
+    fetch('http://localhost:1337/api/news?populate=*'), 
+    fetch('http://localhost:1337/api/galleries?populate=*')
+  ]);
+  const [news, gallery] = await Promise.all([
+    newsRes.json(), 
+    galleryRes.json()
+  ]);
+  return { props: { news, gallery } };
 }
