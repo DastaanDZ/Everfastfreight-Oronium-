@@ -45,7 +45,7 @@ const index = (props) => {
             console.log('item',items)
             return(
                 <div key={index} className={styles.news}>
-            <img src={ `${API_URL}${items.attributes.image.data.attributes.url}`} className={styles.img} alt="" />
+            <img src={items.attributes.image.data.attributes.url} className={styles.img} alt="" />
             <p className={styles.news_title}>ANNOUCEMENT</p>
             <p className={styles.news_desc}>{items.attributes.title}</p>
             <div className={styles.learnmore}> 

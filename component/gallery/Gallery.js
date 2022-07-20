@@ -74,8 +74,8 @@ const index = (props) => {
               {gallery.map((items, index) => {
             return(
               <div key={index} className={styles.img_container}>
-              {console.log(`${API_URL}${items.attributes.url} `)}
-  <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={`${API_URL}${items.attributes.url} `} alt="" />
+              {console.log(items.attributes.url)}
+  <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={items.attributes.url} alt="" />
 </div>
             )
         })}
