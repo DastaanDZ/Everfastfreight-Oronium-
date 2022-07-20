@@ -85,8 +85,8 @@ export default function Home({news,gallery}) {
 
 export async function getServerSideProps() {
   const [newsRes, galleryRes] = await Promise.all([
-    fetch(`${API_URL}api/news?populate=*`), 
-    fetch(`${API_URL}api/galleries?populate=*`)
+    fetch(`${API_URL}/api/news?populate=*`), 
+    fetch(`${API_URL}/api/galleries?populate=*`)
   ]);
   const [news, gallery] = await Promise.all([
     newsRes.json(), 
