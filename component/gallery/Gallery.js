@@ -75,7 +75,7 @@ const index = (props) => {
             return(
               <div key={index} className={styles.img_container}>
               {console.log(items.attributes.url)}
-  <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={items.attributes.url} alt="" />
+  <img style={{ width: 250, height: 250, objectFit: 'cover'}} src={items.attributes.url} alt="" />
 </div>
             )
         })}
