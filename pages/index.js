@@ -16,6 +16,7 @@ import Faqs from '../component/faqs/Faqs'
 
 import axios from 'axios';
 import Sponsor from '../component/sponsors/Sponsor'
+import { API_URL } from '../utils/urls'
 
 
 export default function Home({news,gallery}) {
@@ -84,8 +85,8 @@ export default function Home({news,gallery}) {
 
 export async function getServerSideProps() {
   const [newsRes, galleryRes] = await Promise.all([
-    fetch('http://localhost:1337/api/news?populate=*'), 
-    fetch('http://localhost:1337/api/galleries?populate=*')
+    fetch(`${API_URL}api/news?populate=*`), 
+    fetch(`${API_URL}api/galleries?populate=*`)
   ]);
   const [news, gallery] = await Promise.all([
     newsRes.json(), 

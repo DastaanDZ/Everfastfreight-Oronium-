@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './news.module.css'
 import n1 from '../../assets/images/n1.jpg'
 import { BsArrowRight } from 'react-icons/bs';
-
-const API_URL = 'http://localhost:1337'
+import { API_URL } from '../../utils/urls';
 
 const index = (props) => {
     // console.log('news',props.props)
