@@ -8,6 +8,7 @@ import Services from '../component/services/Services'
 import Testimonials from '../component/testimonials/Testimonials'
 import Awards from '../component/awards/Award'
 import Gallery from '../component/gallery/Gallery'
+import Blog from '../component/blogs/Blogs'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -37,8 +38,6 @@ export default function Home({news,gallery}) {
       <div className={styles.space}></div>
       <Cards/>
       <div className={styles.space}></div>
-      <News props={news.data}/>
-      <div className={styles.space}></div>
       <Services/>
       <div className={styles.space}></div>
       <Testimonials/>
@@ -46,6 +45,10 @@ export default function Home({news,gallery}) {
       <Awards/>
       <div className={styles.space}></div>
       <Gallery props={gallery.data}/>
+      <div className={styles.space}></div>
+      <Blog props={news.data}/>
+      <div className={styles.space}></div>
+      <News props={news.data}/>
       <div className={styles.space}></div>
       <Faqs/>
       <div className={styles.space}></div>
