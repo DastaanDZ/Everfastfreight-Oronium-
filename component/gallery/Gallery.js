@@ -12,8 +12,9 @@ import { API_URL } from "../../utils/urls";
 
 const index = (props) => {
 
-  console.log(props.props[0].attributes.Memories.data[0].attributes.url)
+  console.log('url',props.props[0].attributes.Memories.data[0].attributes.url)
   const gallery = props.props[0].attributes.Memories.data
+  console.log('gallery', gallery)
 
   const ref  = useRef(null)
   console.log(ref)
@@ -73,6 +74,7 @@ const index = (props) => {
               {gallery.map((items, index) => {
             return(
               <div key={index} className={styles.img_container}>
+              {console.log(`${API_URL}${items.attributes.url} `)}
   <img style={{ width: 250, height: 250, objectFit: 'contain'}} src={`${API_URL}${items.attributes.url} `} alt="" />
 </div>
             )
