@@ -5,6 +5,15 @@ import { BsArrowRight } from 'react-icons/bs';
 import { API_URL } from '../../utils/urls';
 
 const index = (props) => {
+
+    // const ref1 = useRef(null)
+    // const ref2 = useRef(null)
+    // const ref3 = useRef(null)
+  
+    // useEffect(() => {
+    //   setHeight(Math.max(ref1.current.offsetHeight, ref2.current.offsetHeight, ref3.current.offsetHeight));
+    // },[])
+
     // console.log('news',props.props)
     // const [news,setNews] = useState([])
 
@@ -33,9 +42,9 @@ const index = (props) => {
 
         <div className={styles.news_container}>
         {news.map((items, index) => {
-            {/* console.log('image attributes',items.attributes.image.data.attributes.url) */}
+            console.log('item',items)
             return(
-                <div key={index} className={styles.news}> 
+                <div key={index} className={styles.news}>
             <img src={ `${API_URL}${items.attributes.image.data.attributes.url}`} className={styles.img} alt="" />
             <p className={styles.news_title}>ANNOUCEMENT</p>
             <p className={styles.news_desc}>{items.attributes.title}</p>
