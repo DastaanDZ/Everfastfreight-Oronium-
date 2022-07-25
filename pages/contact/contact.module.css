@@ -1,0 +1,169 @@
+.contact_container {
+	display: flex;
+	flex-direction: column;
+}
+.overlap {
+	display: flex;
+	flex-direction: column;
+	z-index: 100;
+	position: relative;
+	top: 30vh;
+	align-items: center;
+}
+.header_background_contact {
+	position: absolute;
+}
+.RUready_contact {
+	position: relative;
+	top: 42vh;
+}
+.footer_contact {
+	position: relative;
+	top: 54vh;
+}
+.header_contact {
+	position: absolute;
+	z-index: 100;
+	display: flex;
+	top: -19vh;
+	align-items: center;
+}
+.header_text_image {
+	height: 37px;
+	width: 37px;
+	margin-right: 1rem;
+}
+.contact_us {
+	margin: 0 auto;
+	/* background: brown; */
+	display: flex;
+	width: 100%;
+	max-width: 1000px;
+	border-radius: 0.75rem;
+}
+
+.contact_us_left,
+.contact_us_right {
+	padding: 4rem;
+	width: 50%;
+}
+
+.contact_us_left {
+	border-right: 1px solid #2c2c2c;
+}
+
+.git_content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+	margin: 0 2.25rem 2.25rem 0;
+}
+.contact_icon_wrapper {
+	width: 4rem;
+	height: 4rem;
+	background: white;
+	border-radius: 100%;
+	display: grid;
+	place-content: center;
+	margin-right: 1rem;
+	flex-shrink: 0;
+}
+.contact_icon {
+	font-size: 1.5rem;
+}
+.contact_details h5 {
+	font-size: 1.125rem;
+}
+.contact_details p {
+	color: black;
+}
+
+.social_icons_wrapper {
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+	display: flex;
+}
+
+.contact_icon_wrapper.social_icon {
+	cursor: pointer;
+	transition: 0.1s ease all;
+}
+.contact_icon_wrapper.social_icon:hover {
+	transform: scale(1.05);
+}
+.contact_icon_wrapper.social_icon:active {
+	transform: scale(1);
+}
+
+@media screen and (max-width: 450px) {
+	.header_contact {
+		flex-direction: column;
+		font-family: 'Clash Display', sans-serif;
+		top: -7rem;
+	}
+}
+
+@media (max-width: 1220px) {
+	.contact_us_left,
+	.contact_us_right {
+		padding: 3rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	.contact_us {
+		flex-direction: column;
+	}
+	.contact_us_left {
+		border-right: none;
+		border-bottom: 1px solid #2c2c2c;
+		width: 100%;
+	}
+	.contact_us_right {
+		width: 100%;
+	}
+
+	.git_content {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 550px) {
+	.contact_us_left,
+	.contact_us_right {
+		padding: 2rem 1.5rem;
+	}
+
+	.git_content,
+	.social_icons_wrapper {
+		margin-top: 1.5rem;
+		margin-left: 1rem;
+	}
+
+	.contact {
+		margin: 0 1.5rem 1.5rem 0;
+	}
+
+	.contact_details h5 {
+		font-size: 1rem;
+	}
+
+	.contact_icon_wrapper {
+		width: 3.25rem;
+		height: 3.25rem;
+	}
+
+	.social {
+		margin-top: 1rem;
+	}
+}

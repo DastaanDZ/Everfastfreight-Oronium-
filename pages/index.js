@@ -19,7 +19,6 @@ import axios from 'axios';
 import Sponsor from '../component/sponsors/Sponsor'
 import { API_URL } from '../utils/urls'
 
-
 export default function Home({news,gallery}) {
   // console.log('gallery',news)
   // console.log('news',gallery)

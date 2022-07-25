@@ -1,0 +1,23 @@
+.sub_heading_wrapper {
+	display: flex;
+	align-items: center;
+}
+.sub_heading_icon {
+	width: 2.5rem;
+	margin-right: 1rem;
+}
+.sub_heading {
+	font-family: 'Clash Display', sans-serif;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+@media (max-width: 550px) {
+	.sub_heading {
+		font-size: 1.75rem;
+	}
+	.sub_heading_icon {
+		width: 2.25rem;
+		margin-right: 0.75rem;
+	}
+}
