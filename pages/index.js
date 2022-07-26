@@ -19,7 +19,7 @@ import axios from 'axios';
 import Sponsor from '../component/sponsors/Sponsor'
 import { API_URL } from '../utils/urls'
 
-export default function Home({news,gallery}) {
+export default function Home({news, gallery}) {
   // console.log('gallery',news)
   // console.log('news',gallery)
   return (
@@ -59,16 +59,18 @@ export default function Home({news,gallery}) {
 // export async function getStaticProps() {
 
 //   const newsRes = await axios.get('http://localhost:1337/api/news?populate=*');
-
+//   const galleryRes = await axios.get('http://localhost:1337/api/galleries?populate=*');
+  
 //   return {
 //       props: {
 //         news: newsRes.data,
+//         gallery: galleryRes.data
 //       },
 //   }
 // }
 // export async function getStaticProps() {
 
-//   const galleryRes = await axios.get('http://localhost:1337/api/galleries?populate=*');
+  // const galleryRes = await axios.get('http://localhost:1337/api/galleries?populate=*');
 
 //   return {
 //       props: {

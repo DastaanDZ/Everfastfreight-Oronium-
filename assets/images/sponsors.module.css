@@ -1,0 +1,13 @@
+.svg_container{
+    width: 7rem;
+}
+
+@media (max-width: 768px) {
+    .svg_container{
+        width: 5rem;
+    }
+}
+
+
+@media (max-width: 550px) {
+}

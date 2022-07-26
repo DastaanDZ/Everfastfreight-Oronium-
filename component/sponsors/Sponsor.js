@@ -9,6 +9,8 @@ import Ebay from '../../assets/images/Ebay'
 import Texas from '../../assets/images/Texas'
 
 const Sponsor = () => {
+
+  
   return (
     <>
     <div className={styles.sponsor_container}>

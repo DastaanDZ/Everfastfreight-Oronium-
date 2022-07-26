@@ -1,7 +1,7 @@
 .container{
     display: flex;
     width: 100%;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     padding: 0 3rem;
     height: auto;
