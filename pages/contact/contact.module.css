@@ -49,7 +49,7 @@
 }
 
 .contact_us_left {
-	border-right: 1px solid #2c2c2c;
+	/* border-right: 1px solid #2c2c2c; */
 }
 
 .git_content {
@@ -88,6 +88,8 @@
 	margin-top: 1.5rem;
 	margin-left: 2rem;
 	display: flex;
+	border-radius: 100%;
+	color: white;
 }
 
 .contact_icon_wrapper.social_icon {
@@ -100,7 +102,31 @@
 .contact_icon_wrapper.social_icon:active {
 	transform: scale(1);
 }
-
+.btn_secondary {
+	color: #fff;
+	background: linear-gradient(277.9deg, #1f31d1 -5.62%, #2dc0ef 106.21%);
+	padding: 1rem 1.5rem;
+    line-height: 1;
+    border-radius: 500px;
+    font-size: 1rem;
+    color: white;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    transition: all .15s ease;
+}
+.twitter{
+	background-color: #00acee;
+}
+.instagram{
+	background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.facebook{
+	background-color: #3b5998;
+}
 @media screen and (max-width: 450px) {
 	.header_contact {
 		flex-direction: column;
@@ -121,8 +147,8 @@
 		flex-direction: column;
 	}
 	.contact_us_left {
-		border-right: none;
-		border-bottom: 1px solid #2c2c2c;
+		/* border-right: none; */
+		/* border-bottom: 1px solid #2c2c2c; */
 		width: 100%;
 	}
 	.contact_us_right {

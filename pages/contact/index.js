@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { IoMdCall } from 'react-icons/io'
 import { MdEmail } from 'react-icons/md'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
+import {FcAddressBook,FcCallback } from 'react-icons/fc'
 import SubHeading from '../../component/subheading/SubHeading'
 
 import message from '../../assets/images/message.png'
@@ -29,57 +30,50 @@ function Contact() {
 				<div className={styles.contact_us_left}>
 					<div>
 						<SubHeading title='Get in touch' icon={hand.src} />
-						<div className={styles.git_content}>
-							<div className={styles.contact}>
-								<div className={styles.contact_icon_wrapper}>
-									<IoMdCall className={styles.contact_icon}/>
-								</div>
-								<div className={styles.contact_details}>
-									<h5>Hima K Vasudevan</h5>
-									<p>+91 85929 93253</p>
-								</div>
-							</div>
-							<div className={styles.contact}>
-								<div className={styles.contact_icon_wrapper}>
-									<IoMdCall className={styles.contact_icon}/>
-								</div>
-								<div className={styles.contact_details}>
-									<h5>Vishnu Vijay</h5>
-									<p>+91 90615 88365</p>
-								</div>
-							</div>
-							<div className={styles.contact}>
-								<div className={styles.contact_icon_wrapper}>
-									<MdEmail className={styles.contact_icon}/>
-								</div>
-								<div className={styles.contact_details}>
-									<h5>Email</h5>
-									<p>tathva@nitc.ac.in</p>
-								</div>
-							</div>
+						<p>Send us a message and we'll get in touch with you as soon as possible</p>
+						<div className="address">
+						<SubHeading title='Address' icon={message.src} />
+							<p>Goodway Resources
+							1st Floor, Amritha Complex
+							Near Muhamma Bus stand
+							Muhamma P.O
+							Alappuzha - 688525</p>
 						</div>
-					</div>
-
-					<div className={styles.social}>
+						<div className="phone_social_container">
+							<div className="phone">
+							<FcCallback/>
+								<p>+91 80781 86675</p>
+							</div>
+							<div className={styles.social}>
 						<SubHeading title='Social' icon={earth.src} />
 						<div className={styles.social_icons_wrapper}>
 							<a href='https://www.instagram.com/tathva_nitcalicut/' target='_blank' rel='noreferrer noopener'>
-								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon}`}>
+								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon} ${styles.instagram}`}>
 									<FaInstagram className={styles.contact_icon}/>
 								</div>
 							</a>
 							<a href='https://www.facebook.com/tathva' target='_blank' rel='noreferrer noopener'>
-								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon}`}>
+								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon} ${styles.facebook}`}>
 									<FaFacebook className={styles.contact_icon}/>
 								</div>
 							</a>
 							<a href='https://twitter.com/tathva' target='_blank' rel='noreferrer noopener'>
-								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon}`}>
+								<div className={`${styles.contact_icon_wrapper} ${styles.social_icon} ${styles.twitter}`}>
 									<FaTwitter className={styles.contact_icon}/>
 								</div>
 							</a>
 						</div>
 					</div>
+						</div>
+						<div className="email">
+						<div className="icon_container"> 
+							<FcAddressBook/>
+							<p>EMAIL</p>
+						</div>
+							<p>goodwayresources121@gmail.com</p>
+						</div>
+					</div>
+
 				</div>
 
 				<form className={styles.contact_us_right} onSubmit={handleSubmit}>
