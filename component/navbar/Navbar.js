@@ -3,6 +3,7 @@ import styles from './navbar.module.css'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -34,7 +35,9 @@ const Navbar = () => {
             <li className={styles.li}>Location(Office)</li>
             <li className={styles.li}>Track</li>
             <li className={styles.li}>Career</li>
+            <Link href='/contact'> 
             <li className={styles.li}>Contact</li>
+            </Link>
         </ul>
     </div>
     </>
