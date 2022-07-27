@@ -9,12 +9,14 @@ import SubHeading from '../../component/subheading/SubHeading'
 import message from '../../assets/images/message.png'
 import hand from '../../assets/images/hand.png'
 import earth from '../../assets/images/earth.png'
+import mail from '../../assets/images/mail.png'
+import phone from '../../assets/images/phone.png'
 
 import styles from './contact.module.css'
 
 function Contact() {
 
-    const [form, setForm] = useState({ name: '', email: '', message: '' })
+    const [form, setForm] = useState({ name: '',phone: '', email: '', message: '' })
 
     const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value })
@@ -31,7 +33,7 @@ function Contact() {
 					<div>
 						<SubHeading title='Get in touch' icon={hand.src} />
 						<p>Send us a message and we'll get in touch with you as soon as possible</p>
-						<div className="address">
+						<div className={styles.address}>
 						<SubHeading title='Address' icon={message.src} />
 							<p>Goodway Resources
 							1st Floor, Amritha Complex
@@ -39,9 +41,9 @@ function Contact() {
 							Muhamma P.O
 							Alappuzha - 688525</p>
 						</div>
-						<div className="phone_social_container">
-							<div className="phone">
-							<FcCallback/>
+						<div className={styles.phone_social_container}>
+							<div className={styles.phone}>
+							<SubHeading title='Phone' icon={phone.src} />
 								<p>+91 80781 86675</p>
 							</div>
 							<div className={styles.social}>
@@ -66,10 +68,7 @@ function Contact() {
 					</div>
 						</div>
 						<div className="email">
-						<div className="icon_container"> 
-							<FcAddressBook/>
-							<p>EMAIL</p>
-						</div>
+						<SubHeading title='Email' icon={mail.src} />
 							<p>goodwayresources121@gmail.com</p>
 						</div>
 					</div>
@@ -92,13 +91,25 @@ function Contact() {
 						/>
 					</fieldset>
 					<fieldset>
+						<label>Phone</label>
+						<input
+							type='text'
+							name='phone'
+							placeholder='Enter your phone number'
+							autoComplete='off'
+							required
+							value={form.name}
+							onChange={handleChange}
+						/>
+					</fieldset>
+					<fieldset>
 						<label>Email</label>
 						<input
 							type='email'
 							name='email'
 							placeholder='Enter your email'
 							autoComplete='off'
-							value={form.email}
+							value={form.phone}
 							onChange={handleChange}
 							required
 						/>
