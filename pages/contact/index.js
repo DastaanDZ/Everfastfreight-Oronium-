@@ -32,7 +32,7 @@ function Contact() {
 				<div className={styles.contact_us_left}>
 					<div>
 						<SubHeading title='Get in touch' icon={hand.src} />
-						<p>Send us a message and we'll get in touch with you as soon as possible</p>
+						<p>Send us a message and we&apos;ll get in touch with you as soon as possible</p>
 						<div className={styles.address}>
 						<SubHeading title='Address' icon={message.src} />
 							<p>Goodway Resources
