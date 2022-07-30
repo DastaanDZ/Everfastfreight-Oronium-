@@ -3,6 +3,7 @@ import styles from './news.module.css'
 import n1 from '../../assets/images/n1.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 import { API_URL } from '../../utils/urls';
+import NewsCard from '../newscard/NewsCard';
 
 const index = (props) => {
 
@@ -45,63 +46,12 @@ const index = (props) => {
             console.log('item',items)
             return(
                 <div key={index} className={styles.news}>
-            <img src={items.attributes.image.data.attributes.url} className={styles.img} alt="" />
-            <p className={styles.news_title}>ANNOUCEMENT</p>
-            <p className={styles.news_desc}>{items.attributes.title}</p>
-            <div className={styles.learnmore}> 
-            <p className={styles.lmtext}>Learn More</p>
-            <div className={styles.learn_more_circle}>
-            <BsArrowRight/>
+            <NewsCard img={items.attributes.image.data.attributes.url}
+            desc={items.attributes.title}
+            />
             </div>
-            </div>
-        </div>
             )
         })}
-
-        {/* <div className={styles.news}> 
-            <img src={n1.src} className={styles.img} alt="" />
-            <p className={styles.news_title}>ANNOUCEMENT</p>
-            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
-            <div className={styles.learnmore}> 
-            <p className={styles.lmtext}>Learn More</p>
-            <div className={styles.learn_more_circle}>
-            <BsArrowRight/>
-            </div>
-            </div>
-        </div>
-        <div className={styles.news}> 
-            <img src={n1.src} className={styles.img} alt="" />
-            <p className={styles.news_title}>ANNOUCEMENT</p>
-            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
-            <div className={styles.learnmore}> 
-            <p className={styles.lmtext}>Learn More</p>
-            <div className={styles.learn_more_circle}>
-            <BsArrowRight/>
-            </div>
-            </div>
-        </div>
-        <div className={styles.news}> 
-            <img src={n1.src} className={styles.img} alt="" />
-            <p className={styles.news_title}>ANNOUCEMENT</p>
-            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
-            <div className={styles.learnmore}> 
-            <p className={styles.lmtext}>Learn More</p>
-            <div className={styles.learn_more_circle}>
-            <BsArrowRight/>
-            </div>
-            </div>
-        </div>
-        <div className={styles.news}> 
-            <img src={n1.src} className={styles.img} alt="" />
-            <p className={styles.news_title}>ANNOUCEMENT</p>
-            <p className={styles.news_desc}>Etiam senectus sed gravida enim nunc donec magnis. Quisque massa proin leo id eget. </p>
-            <div className={styles.learnmore}> 
-            <p className={styles.lmtext}>Learn More</p>
-            <div className={styles.learn_more_circle}>
-            <BsArrowRight/>
-            </div>
-            </div>
-        </div> */}
         </div>
     </div>
     </>

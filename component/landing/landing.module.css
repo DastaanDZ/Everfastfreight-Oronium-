@@ -34,6 +34,7 @@
     margin-right: 0.7rem;
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 .services{
     display: flex;
@@ -47,6 +48,7 @@
     box-shadow: none;
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
+    cursor: pointer;
 }
 .videoplayer{
     display: flex;

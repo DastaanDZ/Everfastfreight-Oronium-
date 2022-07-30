@@ -23,7 +23,7 @@ const Accordian = (item) => {
     <div className={styles.ques_ans_container}> 
     <div className={styles.ques_container}>
     <div className={styles.ques}> 
-        <p>{item.ques}</p>
+        <p className={styles.ques}>{item.ques}</p>
     </div>
         <div className={styles.circle} onClick={() => setShow(!show)} style={{
   background: show ? '#D248AC' : '#0053D6'

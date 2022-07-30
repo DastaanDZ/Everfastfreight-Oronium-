@@ -19,9 +19,11 @@ const Navbar = () => {
   return (
     <>
     <div className={styles.navbar_container}>
+      <Link href='/'> 
         <div className={styles.logo_container}>
             <img src={logo.src} className={styles.logo} alt="" />
         </div>
+      </Link>
         <div className={styles.close} onClick={() => {setToggle(!toggle)}}> 
         <GiHamburgerMenu/>
         </div>
@@ -32,7 +34,7 @@ const Navbar = () => {
         </div>
             <li className={styles.li}>Services</li>
             <li className={styles.li}>About</li>
-            <li className={styles.li}>Location(Office)</li>
+            <li className={styles.li}>Branches</li>
             <li className={styles.li}>Track</li>
             <li className={styles.li}>Career</li>
             <Link href='/contact'> 
