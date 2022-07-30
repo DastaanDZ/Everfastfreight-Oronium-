@@ -14,6 +14,7 @@ const AllNB = ({news}) => {
                 <div key={index} className={styles.news}>
             <NewsCard img={items.attributes.image.data.attributes.url}
             desc={items.attributes.title}
+            id = {items.id}
             />
             </div>
             )

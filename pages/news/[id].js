@@ -8,7 +8,7 @@ const Single = ({news}) => {
     console.log(news)
   return (
     <>
-        {/* <SingleNB news={news}/> */}
+        <SingleNB news={news}/>
     </>
   )
 }
@@ -17,7 +17,7 @@ export default Single
 
 export async function getStaticProps({params}){
     console.log(params.id)
-    const newsRes = await axios.get(`${API_URL}/api/news/${params.id}`);
+    const newsRes = await axios.get(`${API_URL}/api/news/${params.id}/?populate=*`);
     // console.log('newsRes from getSSprops', newsRes.data)
     return{
         props:{

@@ -13,6 +13,9 @@ import mail from '../../assets/images/mail.png'
 import phone from '../../assets/images/phone.png'
 
 import styles from './contact.module.css'
+import axios from 'axios'
+
+import { API_URL } from '../../utils/urls'
 
 function Contact() {
 
@@ -22,8 +25,19 @@ function Contact() {
 		setForm({ ...form, [e.target.name]: e.target.value })
 	}
 
-	function handleSubmit(e) {
+	async function handleSubmit(e) {
 		e.preventDefault()
+		// http://localhost:1337/admin/settings/application-infos
+		const formRes = await axios.post(`${API_URL}/api/contacts`,{
+			data: { 
+
+				name: form.name,
+				phone: form.phone,
+				email: form.email,
+				message: form.message
+			}
+		})
+		console.log(formRes)
 	}
 
     return (
@@ -98,7 +112,7 @@ function Contact() {
 							placeholder='Enter your phone number'
 							autoComplete='off'
 							required
-							value={form.name}
+							value={form.phone}
 							onChange={handleChange}
 						/>
 					</fieldset>
@@ -109,7 +123,7 @@ function Contact() {
 							name='email'
 							placeholder='Enter your email'
 							autoComplete='off'
-							value={form.phone}
+							value={form.email}
 							onChange={handleChange}
 							required
 						/>
