@@ -4,6 +4,7 @@ import n1 from '../../assets/images/n1.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 import { API_URL } from '../../utils/urls';
 import NewsCard from '../newscard/NewsCard';
+import Link from 'next/link';
 
 const index = (props) => {
 
@@ -33,9 +34,11 @@ const index = (props) => {
         <p className={styles.heading}>News</p>
         <div className={styles.learnmore}> 
             <p className={styles.mntext}>More news</p>
+            <Link href='/news'> 
             <div className={styles.more_news_circle}>
             <BsArrowRight/>
             </div>
+            </Link>
             </div>
     </div>
 
