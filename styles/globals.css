@@ -58,6 +58,7 @@ p{
 	display: flex;
 	align-items: stretch;
   justify-content: center;
+  height: 220.667px !important;
   }
   
   .swiper-slide img {

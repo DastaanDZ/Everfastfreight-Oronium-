@@ -1,5 +1,5 @@
 import React from 'react'
-
+import styles from './sponsor.module.css'
 import SponsorData from '../../assets/data/SponsorData'
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,7 +50,9 @@ const Sponsor = () => {
       {SponsorData.map((item,index) => {
         return(
           <SwiperSlide key={index}>
-        <img src={item.pic.src} style={{width: '50%', height: '50%'}} alt="" />
+          <div className={styles.sponsor_img_container}> 
+        <img src={item.pic.src} style={{width: '50%'}} alt="" />
+          </div>
         </SwiperSlide>
         )
       })}
