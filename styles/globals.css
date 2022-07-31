@@ -70,12 +70,13 @@ p{
   }
   
   .swiper-slide {
+  /* width: 5rem !important; */
 	text-align: left;
 	font-size: 18px;
 	background: #fff;
 	display: flex;
 	align-items: stretch;
-  
+  justify-content: center;
 	/* Center slide text vertically */
 	/* display: -webkit-box;
 	display: -ms-flexbox;
