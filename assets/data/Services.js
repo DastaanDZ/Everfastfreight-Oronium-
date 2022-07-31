@@ -7,32 +7,32 @@ const Services =[
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Sea Freight',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Warehousing',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Customer Clearence',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Door to Door Service',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Road Transport',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Air Freight',
+        title:'Project Forwarding',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },

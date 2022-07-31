@@ -40,6 +40,9 @@
     font-size: 16px;
 color: rgba(0, 0, 0, 0.7);
 }
+.li{
+    cursor: pointer;
+}
 
 @media (max-width: 1220px) {
 }
