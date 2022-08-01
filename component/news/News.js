@@ -5,6 +5,7 @@ import { BsArrowRight } from 'react-icons/bs';
 import { API_URL } from '../../utils/urls';
 import NewsCard from '../newscard/NewsCard';
 import Link from 'next/link';
+import Button1 from '../button1/Button1';
 
 const index = (props) => {
 
@@ -32,14 +33,7 @@ const index = (props) => {
     <div className={styles.container}>
     <div className={styles.title}> 
         <p className={styles.heading}>News</p>
-        <div className={styles.learnmore}> 
-            <p className={styles.mntext}>More news</p>
-            <Link href='/news'> 
-            <div className={styles.more_news_circle}>
-            <BsArrowRight/>
-            </div>
-            </Link>
-            </div>
+        <Button1 text='More News' route='/news'/>
     </div>
 
     <div className={styles.space}></div>
