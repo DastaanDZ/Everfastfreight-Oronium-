@@ -32,7 +32,7 @@ const index = () => {
 
     <div className={styles.space}></div>
 
-      <div className={styles.info}>
+      <div className={styles.info2}>
         <div className={styles.right}>
             <img src={AboutImg.src} className={styles.img} alt="" />
         </div>
