@@ -2,7 +2,7 @@
     width: 100%;
     padding: 0 4rem;
 }
-.info{
+.info, .info2{
     display: flex;
     align-items: center;
     justify-content: space-around;
