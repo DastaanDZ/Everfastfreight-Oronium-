@@ -33,7 +33,9 @@ const Navbar = () => {
           <AiOutlineClose/>
         </div>
             <li className={styles.li}>Services</li>
+            <Link href='/aboutus'> 
             <li className={styles.li}>About</li>
+            </Link>
             <li className={styles.li}>Branches</li>
             <li className={styles.li}>Track</li>
             <li className={styles.li}>Career</li>
