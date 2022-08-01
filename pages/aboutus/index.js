@@ -23,7 +23,7 @@ const index = () => {
       <div className={styles.profile}>
         {ProfileData.map((item,index) => {
             return(
-                <div className={styles.profile_card}> 
+                <div className={styles.profile_card} key={index}> 
                 <ProfileCard img={item.img.src} name={item.name} desc={item.desc}/>
                 </div>
                 )
