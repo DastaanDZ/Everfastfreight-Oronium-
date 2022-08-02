@@ -16,15 +16,15 @@ import Cors from "cors";
  } 
   
  export default async function handler(req, res) { 
-   await runMiddleware(req, res, cors); 
-//    console.log("POST request recieved", dayjs().format("DD/MM/YYYY HH:mm:ss")); 
+   await runMiddleware( req, res, cors); 
    const url = getPageUrl(req.body.model, req.body.entry); 
-   console.log(url); 
-   console.log(req.body)
    try { 
-     if (req.headers["secret-key"] != process.env.REVALIDATE_SECRET_KEY) 
+    console.log(req.query);
+     if (req.query.secret!= process.env.REVALIDATE_SECRET_KEY) {
+       console.log('inva')
        return res.status(500).send("Invalid secret key"); 
-     else { 
+      }
+     else { console.log('dskd')
        if (url) { 
          console.log( 
            "secret key matched and url is valid, waiting for 5sec"
@@ -60,8 +60,6 @@ import Cors from "cors";
    switch (model) {
     case 'new':
         return ['/news',`/news/${entry.id}`]
-        break;
-   
     default:
         break;
    }
