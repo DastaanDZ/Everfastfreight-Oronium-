@@ -17,7 +17,7 @@ const Services =[
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
     { 
-        title:'Customer Clearence',
+        title:'Custom Clearence',
         pic: js,
         info:'Interdum ultrices ante egestas gravida. Penatibus ornare tellus enim, non nulla. Commodo scelerisque nec vitae eget nulla nisi, magna et. Fusce.',
     },
