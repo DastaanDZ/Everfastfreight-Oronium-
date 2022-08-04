@@ -38,9 +38,9 @@ li{
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
-li:last-child{
+/* li:last-child{
   margin-bottom: 0px;
-}
+} */
 p{
   margin:0px;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsFacebook,BsTwitter,BsLinkedin,BsYoutube } from 'react-icons/bs';
+import { BsFacebook,BsTwitter,BsLinkedin,BsYoutube, BsInstagram } from 'react-icons/bs';
 import logo from '../../assets/images/logo.png'
 import styles from './footer.module.css'
 
@@ -36,16 +36,19 @@ const Footer = () => {
                 <p className={styles.heading}>Social</p>
                 <ul className={styles.ul}>
                 <a href='https://www.facebook.com/EVERFASTINDIA/'> 
-                    <li className={styles.li}><BsFacebook/> <p>Facebook</p></li>
+                    <li className={styles.li}><BsFacebook/> <p className={styles.social_media_icon}>Facebook</p></li>
                 </a>
                 <a href='https://twitter.com/EverfastF'> 
-                    <li className={styles.li}><BsTwitter/> <p>Twitter</p></li>
+                    <li className={styles.li}><BsTwitter/> <p className={styles.social_media_icon}>Twitter</p></li>
                 </a>
                 <a href='https://www.linkedin.com/in/everfast-freight-aa4752119/?originalSubdomain=in'> 
-                    <li className={styles.li}><BsLinkedin/> <p>Linkedin</p></li>
+                    <li className={styles.li}><BsLinkedin/> <p className={styles.social_media_icon}>Linkedin</p></li>
                 </a>
                 <a> 
-                    <li className={styles.li}><BsYoutube/> <p>Youtube</p></li>
+                    <li className={styles.li}><BsYoutube/> <p className={styles.social_media_icon}>Youtube</p></li>
+                </a>
+                <a> 
+                    <li className={styles.li}><BsInstagram/> <p className={styles.social_media_icon}>Instagram</p></li>
                 </a>
                 </ul>
             </div>
