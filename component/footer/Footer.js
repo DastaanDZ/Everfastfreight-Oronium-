@@ -2,6 +2,7 @@ import React from 'react'
 import { BsFacebook,BsTwitter,BsLinkedin,BsYoutube, BsInstagram } from 'react-icons/bs';
 import logo from '../../assets/images/logo.png'
 import styles from './footer.module.css'
+import Link from 'next/link';
 
 import a from 'next/link';
 const Footer = () => {
@@ -16,20 +17,38 @@ const Footer = () => {
             <div className={styles.part1}>
                 <p className={styles.heading}>Jump to</p>
                 <ul className={styles.ul}>
+                <Link href='/aboutus'> 
                     <li className={styles.li}>About</li>
+                </Link>
+                <Link href='/news'> 
                     <li className={styles.li}>News</li>
+                </Link>
+                <Link href='/'> 
                     <li className={styles.li}>Testimonials</li>
+                </Link>
+                <Link href='/services'> 
                     <li className={styles.li}>Services</li>
+                </Link>
+                <Link href='/'> 
                     <li className={styles.li}>FAQs</li>
+                </Link>
                 </ul>
             </div>
             <div className={styles.part2}>
                 <p className={styles.heading}>Legal</p>
                 <ul className={styles.ul}>
+                <Link href='/privacypolicy'> 
                     <li className={styles.li}>Privacy Policy</li>
+                </Link>
+                    <Link href='/termsofservices'> 
                     <li className={styles.li}>Terms of Services</li>
+                    </Link>
+                <Link href='/licenses'> 
                     <li className={styles.li}>Licenses</li>
+                </Link>
+                <Link href='/permits'> 
                     <li className={styles.li}>Permits</li>
+                </Link>
                 </ul>
             </div>
             <div className={styles.part3}>
