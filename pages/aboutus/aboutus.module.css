@@ -6,7 +6,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 56px;
     margin-bottom: 3rem;
 }
 .desc{
@@ -72,6 +72,7 @@ text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
+margin-bottom: 2rem;
 }
 .heading_container{
     width: 100%;
@@ -86,13 +87,13 @@ justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 56px;
 }
 .history_desc{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 18px;
 }
 @media (max-width: 1220px) {
     .hero{
