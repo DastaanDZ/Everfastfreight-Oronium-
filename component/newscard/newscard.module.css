@@ -4,6 +4,14 @@ text-align: left;
 margin-right: 1rem;
 margin-bottom: 3rem;
 }
+/* .img_container{
+    width: 270px;
+    height: 301px;
+    border-radius: 0px 0px 40px 0px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1rem;
+} */
 .img{
     width: 270px;
     height: 301px;

@@ -4,6 +4,7 @@ import n1 from '../../assets/images/n1.jpg'
 import { BsArrowRight } from 'react-icons/bs';
 import { API_URL } from '../../utils/urls';
 import Button1 from '../button1/Button1';
+import Link from 'next/link';
 
 const index = (props) => {
 
@@ -44,12 +45,14 @@ const index = (props) => {
             <img src={ items.attributes.image.data.attributes.url} className={styles.img} alt="" />
             <p className={styles.news_title}>ANNOUCEMENT</p>
             <p className={styles.news_desc}>{items.attributes.title}</p>
+            <Link href='/blog'> 
             <div className={styles.learnmore}> 
             <p className={styles.lmtext}>Learn More</p>
             <div className={styles.learn_more_circle}>
             <BsArrowRight/>
             </div>
             </div>
+            </Link>
         </div>
             )
         })}

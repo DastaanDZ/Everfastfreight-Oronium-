@@ -18,6 +18,11 @@
     list-style: none;
     margin-right: 1rem;
 }
+.part3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .logo{
     width: 173.21px;
     height: 60.21px;

@@ -36,9 +36,13 @@ const Navbar = () => {
             <Link href='/aboutus'> 
             <li className={styles.li}>About</li>
             </Link>
+            <Link href='/branches'> 
             <li className={styles.li}>Branches</li>
+            </Link>
             <li className={styles.li}>Track</li>
+            <Link href='/career'> 
             <li className={styles.li}>Career</li>
+            </Link>
             <Link href='/contact'> 
             <li className={styles.li}>Contact</li>
             </Link>

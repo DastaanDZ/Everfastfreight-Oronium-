@@ -100,4 +100,10 @@ align-items: center;
 
 
 @media (max-width: 550px) {
+    .heading{
+        font-size: 40px;
+    }
+    .services_types{
+        font-size: 32px;
+    }
 }
