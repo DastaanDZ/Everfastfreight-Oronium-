@@ -39,6 +39,7 @@ margin-bottom: 3rem;
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
     margin-bottom: 1rem;
+    word-wrap: break-word;
 }
 .learn_more_circle{
     width: 22px;
