@@ -50,8 +50,8 @@ export default function Home({news, gallery}) {
       <News props={news.data}/>
       <div className={styles.space}></div>
       <Faqs/>
-      <div className={styles.space}></div>
-      <Footer/>
+      {/* <div className={styles.space}></div> */}
+      {/* <Footer/> */}
     </div>
   )
 }
