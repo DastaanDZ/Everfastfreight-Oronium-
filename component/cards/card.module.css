@@ -54,6 +54,12 @@
     color: rgba(0, 0, 0, 0.6);
     margin-bottom: 4rem;
 }
+.manager{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-bottom: 0.5rem;
+}
 .description ul{
     list-style: circle;
 }
