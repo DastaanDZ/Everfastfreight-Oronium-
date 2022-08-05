@@ -19,9 +19,9 @@
     margin-right: 1rem;
 }
 .part3{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
 }
 .logo{
     width: 173.21px;
@@ -30,6 +30,7 @@
 .ul{
     list-style: none;
     padding: 0px;
+    
 }
 .logo_desc{
     font-family: 'DM Sans', sans-serif;
@@ -83,7 +84,8 @@ align-items: center;
     }
     .ul{
         display: flex;
-
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
     .part1,.part2{
         margin-right: 0rem;

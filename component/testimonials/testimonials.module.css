@@ -20,7 +20,6 @@
     padding: 0 4rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 100%;
         font-family: 'Newsreader', serif;
         font-size: 56px;
@@ -89,6 +88,12 @@ color: #BABABA;
 }
 
 @media (max-width: 768px) {
+}
+@media (max-width: 550px) {
+    .title{
+        padding: 0px;
+        justify-content: center;
+    }
 }
 
 

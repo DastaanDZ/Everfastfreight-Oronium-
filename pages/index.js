@@ -39,10 +39,10 @@ export default function Home({news, gallery}) {
       <div className={styles.space}></div>
       <Services/>
       <div className={styles.space}></div>
-      <Testimonials/>
-      <div className={styles.space}></div>
-      <Awards/>
-      <div className={styles.space}></div>
+      {/* <Testimonials/>
+      <div className={styles.space}></div> */}
+      {/* <Awards/>
+      <div className={styles.space}></div> */}
       <Gallery props={gallery.data}/>
       <div className={styles.space}></div>
       <Blog props={news.data}/>
