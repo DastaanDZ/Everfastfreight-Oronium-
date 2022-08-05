@@ -7,7 +7,7 @@ const index = ({branches}) => {
     // console.log(branches)
   return (
     <>
-    {/* <div className={styles.container}>
+    <div className={styles.container}>
     {branches.data.map((items,index) =>{
         return(
             <div className={styles.card1} key={index}>
@@ -23,20 +23,20 @@ const index = ({branches}) => {
     </div>
         )
     })}
-    </div> */}
+    </div>
     </>
   )
 }
 
 export default index
 
-// export async function getStaticProps() {
+export async function getStaticProps() {
 
-//     const branchesRes = await axios.get(`${API_URL}/api/branches`);
-//     // console.log(newsRes);
-//     return {
-//         props: {
-//             branches: branchesRes.data,
-//         },
-//     }
-//   }
+    const branchesRes = await axios.get(`${API_URL}/api/branches`);
+    // console.log(newsRes);
+    return {
+        props: {
+            branches: branchesRes.data,
+        },
+    }
+  }
