@@ -72,7 +72,7 @@ export default function ServicePage() {
         <div className={styles.left}>
           <p className={styles.heading}>{data[index].service}</p>
           <p className={styles.desc}>{data[index].content}</p>
-          <Button1 text="Explore" route="/" />
+          <Button1 text="Contact Us" route="/contact" />
         </div>
         <div className={styles.right}>
           <img src={`/service/${index}.jpg`} className={styles.img} alt="" />
