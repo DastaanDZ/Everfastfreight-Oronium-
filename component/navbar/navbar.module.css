@@ -27,6 +27,21 @@
   margin-bottom: 0px;
   cursor: pointer;
 }
+.li:hover .dropdown_services{
+  position: absolute;
+  display: block;
+  background: white;
+}
+.dropdown_services{
+  display: none;
+}
+.dropdown_services ul{
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.down_arrow{
+  display: none;
+}
 .para {
   margin: 0px;
 }
@@ -47,6 +62,9 @@
 }
 
 @media (max-width: 768px) {
+  .dropdown_services{
+    display: block;
+  }
   .close {
     display: block;
   }
@@ -63,6 +81,13 @@
     background: white;
     margin: 0px;
     transition: all 0.5s ease;
+  }
+  .down_arrow{
+    display: inline-flex;
+  }
+  .services_li{
+    display: flex;
+    justify-content: space-between;
   }
   .navbar_container {
     padding: 0 2rem;

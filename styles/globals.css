@@ -40,8 +40,8 @@ ul{
   list-style: none;
 }
 li{
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 }
