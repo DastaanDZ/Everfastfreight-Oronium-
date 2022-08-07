@@ -33,20 +33,20 @@ const index = () => {
         <div className={styles.space}></div>
 
         <div className={styles.info}>
-          {data.map((items, index) => {
+          {data.map((items) => {
             return (
-              <Link href={`/services/${title[index]}`} key={index}>
-                <div className={styles.content}>
+                <div className={styles.content} key={items.index}>
                   <div className={styles.left}>
                     <img src={items.pic.src} className={styles.pic} alt="" />
                     <p className={styles.services_types}>{items.title}</p>
                   </div>
+              <Link href={`/services/${title[items.index]}`}> 
                   <div className={styles.right}>
                     <p className={styles.services_info}>{items.info}</p>
                     <Button2/>
                   </div>
-                </div>
               </Link>
+                </div>
             );
           })}
         </div>

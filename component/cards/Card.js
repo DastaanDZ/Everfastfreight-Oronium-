@@ -25,11 +25,10 @@ const index = () => {
         <div className={styles.title}><p>Vision</p></div>
         <div className={styles.description}>
         <ul>
-            <li>To be the leading service provider, distinguished by the quality of our services. MISSION is to provide benefits to customers:</li>
-            <li>Providing outstanding operational quality in the industry.</li>
-            <li>Providing dedication to customers and their business.</li>
-            <li>Providing operational excellence and information.</li>
-            <li>Become a flexible, agile and innovative organization.</li>
+            <li>To be the leading service provider, distinguished by the quality of our services that benefits our customers</li>
+            <li>Providing outstanding operational quality and flow of information.</li>
+            <li>Providing dedicated cost effective and timely services to customers.</li>
+            <li>Being a flexible, agile and innovative organization.</li>
           </ul>
         </div>
     </div>
@@ -41,7 +40,7 @@ const index = () => {
             <li>Starts with knowing our customers.</li>
             <li>Understanding their business.</li>
             <li>Understanding our customer’s current and future requirements.</li>
-            <li>Designing our customer’s requirements and be responsive and efficient.</li>
+            <li>Designing service parameters as per customer requirements to being responsive, responsible and efficient.</li>
           </ul>
         </div>
     </div>
@@ -58,7 +57,6 @@ const index = () => {
             <li>Consumer Focused Work Ethos</li>
             <li>Multiple Product Range</li>
             <li>Software Driven</li>
-            <li>Track and Trace Capability</li>
           </ul>
         </div>
     </div>
