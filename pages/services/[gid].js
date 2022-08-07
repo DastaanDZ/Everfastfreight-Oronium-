@@ -52,6 +52,7 @@ export default function ServicePage() {
         Project Services gets it done with Everfast Freight Forwarders project management, a creative and customized transport plan and a network of strategically placed oversize freight specialists to supervise the move every step of the way. Project Services experts also work to ensure that the most appropriate routing and modes of transport are used while helping you understand every aspect of your transportation costs. Size, weight, and complexity are challenges we conquer every day.`,
     },
   ];
+
   const title = [
     "air-freight",
     "sea-freight",
@@ -61,6 +62,7 @@ export default function ServicePage() {
     "road-transport ",
     "project-forwarding",
   ];
+  
   useEffect(() => {
     if (gid) {
       setIndex(title.indexOf(gid));

@@ -6,6 +6,8 @@
     padding: 0 3rem;
     height: auto;
     flex-wrap: wrap;
+    margin-bottom: var(--div-margin);
+    color: var(--div-color);
 }
 .card1,.card2,.card3{
     display: flex;
