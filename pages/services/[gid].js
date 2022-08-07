@@ -89,12 +89,13 @@ export default function ServicePage() {
     "warehousing",
     "custom-clearance",
     "door-to-door",
-    "road-transport ",
+    "road-transport",
     "project-forwarding",
   ];
   useEffect(() => {
     if (gid) {
       setIndex(title.indexOf(gid));
+      console.log(index);
     }
   }, [gid]);
   return (

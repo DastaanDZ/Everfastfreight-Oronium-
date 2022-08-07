@@ -1,14 +1,12 @@
-.container{
-    text-align: center;
-    margin: 1rem
+.container {
+  text-align: center;
+  margin: 1rem;
 }
-.img{
-    width: 256px;
-height: 256px;
+.img {
+  width: 256px;
+  height: 256px;
 }
-.name{
-
+.name {
 }
-.desc{
-    
+.desc {
 }
