@@ -49,7 +49,7 @@ const Navbar = () => {
             setToggle(!toggle);
           }}/>
           </div>
-          <li className={styles.li}>
+          <li className={styles.li} onClick={()=> console.log('hello')} >
           <p className={styles.services_li}>Services {toggleLi?<BiDownArrow className={styles.down_arrow} onClick={()=> setToggleLi(!toggleLi)}/>:<BiUpArrow className={styles.down_arrow} onClick={()=> setToggleLi(!toggleLi)}/>}</p>
           <div className={styles.dropdown_services} style={{display : showDropDown? 'block': 'none'}}>
             <ul>

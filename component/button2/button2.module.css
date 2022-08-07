@@ -1,0 +1,18 @@
+.learn_more_circle{
+    width: 22px;
+    height: 22px;
+    background: #FED130;
+    border-radius: 100%;
+    text-align: center;
+}
+.learnmore{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.lmtext{
+    margin-right: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    color: #0053D6;
+}

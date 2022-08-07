@@ -33,6 +33,9 @@
     padding: 0px;
     
 }
+.part3 ul li{
+    display: flex;
+}
 .logo_desc{
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;

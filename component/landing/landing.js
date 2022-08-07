@@ -18,10 +18,12 @@ const Landing = () => {
           <BsArrowRight/>
         </div>
       </Link>
+      <a href="#services"> 
         <div className={styles.services}>
           <p className={styles.btn_text}>SERVICES</p>
           <BsArrowRight/>
         </div>
+      </a>
       </div>
     </div>
     <div className={styles.videoplayer}>
