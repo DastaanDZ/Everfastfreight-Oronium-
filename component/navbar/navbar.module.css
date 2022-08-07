@@ -27,13 +27,12 @@
   margin-bottom: 0px;
   cursor: pointer;
 }
-.li:hover .dropdown_services{
-  position: absolute;
-  display: block;
-  background: white;
-}
-.dropdown_services{
+.dropdown_services_mob{
   display: none;
+}
+.dropdown_services ul{
+  position: absolute;
+  background-color: white;
 }
 .dropdown_services ul{
   padding-left: 1rem;
@@ -63,6 +62,9 @@
 
 @media (max-width: 768px) {
   .dropdown_services{
+    display: none;
+  }
+  .dropdown_services_mob{
     display: block;
   }
   .close {

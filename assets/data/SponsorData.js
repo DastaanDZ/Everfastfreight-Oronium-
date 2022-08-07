@@ -1,56 +1,64 @@
-import logo1 from '../images/logo1.png'
-import logo2 from '../images/logo2.png'
-import logo3 from '../images/logo3.png'
-import logo4 from '../images/logo4.png'
-import logo5 from '../images/logo5.png'
-import logo6 from '../images/logo6.png'
-import logo7 from '../images/logo7.png'
-import logo8 from '../images/logo8.png'
-import logo9 from '../images/logo9.png'
-import logo10 from '../images/logo10.png'
-import logo11 from '../images/logo11.png'
-import logo12 from '../images/logo12.png'
-import logo13 from '../images/logo13.png'
+import iata from '../images/iata.png'
+import mto from '../images/mto.png'
+import cha from '../images/cha.png'
+import sagac from '../images/sagac.png'
+import fmc from '../images/fmc.png'
+import ctpat from '../images/ctpat.png'
+import fiata from '../images/fiata.png'
+import tiaca from '../images/tiaca.png'
+import dandb from '../images/d&b.png'
+import akaki from '../images/akaki.png'
+import amtoi from '../images/amtoi.png'
+import wca from '../images/wca.png'
+import xl from '../images/xl.png'
+import twig from '../images/twig.png'
+import ppl from '../images/ppl.png'
 
 const SponsorData =[
     { 
-        pic: logo1,
+        pic: iata,
     },
     { 
-        pic: logo2,
+        pic: mto,
     },
     { 
-        pic: logo3,
+        pic: cha,
     },
     { 
-        pic: logo4,
+        pic: sagac,
     },
     { 
-        pic: logo5,
+        pic: fmc,
     },
     { 
-        pic: logo6,
+        pic: ctpat,
     },
     { 
-        pic: logo7,
+        pic: fiata,
     },
     { 
-        pic: logo8,
+        pic: tiaca,
     },
     { 
-        pic: logo9,
+        pic: dandb,
     },
     { 
-        pic: logo10,
+        pic: akaki,
     },
     { 
-        pic: logo11,
+        pic: amtoi,
     },
     { 
-        pic: logo12,
+        pic: wca,
     },
     { 
-        pic: logo13,
+        pic: xl,
+    },
+    { 
+        pic: twig,
+    },
+    { 
+        pic: ppl,
     },
 ]
 

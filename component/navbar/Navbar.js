@@ -10,6 +10,9 @@ const Navbar = () => {
 
   const [toggle, setToggle] = useState(false);
   const [toggleLi, setToggleLi] = useState(false)
+  const [showDropDown, setShowDropDown] = useState(false)
+
+  console.log('show',showDropDown)
 
   const style1 = {
     left: toggle ? "0" : "-100%",
@@ -21,7 +24,7 @@ const Navbar = () => {
   const style2 = {
       display: toggleLi? 'block' : 'none',
   };
-  console.log(toggleLi)
+  // console.log(toggleLi)
 
   return (
     <>
@@ -48,7 +51,18 @@ const Navbar = () => {
           </div>
           <li className={styles.li}>
           <p className={styles.services_li}>Services {toggleLi?<BiDownArrow className={styles.down_arrow} onClick={()=> setToggleLi(!toggleLi)}/>:<BiUpArrow className={styles.down_arrow} onClick={()=> setToggleLi(!toggleLi)}/>}</p>
-          <div className={styles.dropdown_services} style={style2}>
+          <div className={styles.dropdown_services} style={{display : showDropDown? 'block': 'none'}}>
+            <ul>
+              <li>Air Freight</li>
+              <li>Sea Freight</li>
+              <li>Warehousing</li>
+              <li>Custom Clearence</li>
+              <li>Door to Door Services</li>
+              <li>Road Transport</li>
+              <li>Project Forwarding</li>
+            </ul>
+          </div>
+          <div className={styles.dropdown_services_mob} style={style2}>
             <ul>
               <li>Air Freight</li>
               <li>Sea Freight</li>
