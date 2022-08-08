@@ -9,7 +9,7 @@ import { API_URL } from "../../utils/urls";
 
 import { useState } from "react";
 
-const Career = () => {
+function Career(){
 
   const [form, setForm] = useState({ name: '',country: ''})
 
