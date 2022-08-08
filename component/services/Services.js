@@ -17,17 +17,15 @@ const index = () => {
   ];
   return (
     <>
-      <div className={styles.container} id='services'>
+      <div className={styles.container} id="services">
         <div className={styles.title}>
           <p className={styles.heading}>Services</p>
-          <p className={styles.desc}>
-            Nibh massa ut sodales amet ac eleifend non tempor.
-          </p>
-          <Link href='/contact'> 
-          <div className={styles.btn}>
-            <p>GET IN TOUCH</p>
-            <BsArrowRight />
-          </div>
+          <p className={styles.desc}></p>
+          <Link href="/contact">
+            <div className={styles.btn}>
+              <p>GET IN TOUCH</p>
+              <BsArrowRight />
+            </div>
           </Link>
         </div>
         <div className={styles.space}></div>
@@ -35,18 +33,18 @@ const index = () => {
         <div className={styles.info}>
           {data.map((items) => {
             return (
-                <div className={styles.content} key={items.index}>
-                  <div className={styles.left}>
-                    <img src={items.pic.src} className={styles.pic} alt="" />
-                    <p className={styles.services_types}>{items.title}</p>
-                  </div>
-              <Link href={`/services/${title[items.index]}`}> 
+              <div className={styles.content} key={items.index}>
+                <div className={styles.left}>
+                  <img src={items.pic.src} className={styles.pic} alt="" />
+                  <p className={styles.services_types}>{items.title}</p>
+                </div>
+                <Link href={`/services/${title[items.index]}`}>
                   <div className={styles.right}>
                     <p className={styles.services_info}>{items.info}</p>
-                    <Button2/>
+                    <Button2 />
                   </div>
-              </Link>
-                </div>
+                </Link>
+              </div>
             );
           })}
         </div>

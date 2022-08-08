@@ -21,7 +21,7 @@ export default function ServicePage() {
     },
     {
       img: "",
-      service: "Sea Freight",
+      service: "Ocean freight",
       content: `As a licensed international Ocean Freight Forwarder with MTO license and FMC accredited; Everfast Freight Forwarders Pvt Ltd provides flexible and integrated ocean freight services to create the most highly adaptable, reliable and customizable solutions in the industry. 
 
       Our approach starts with having the most experienced and dedicated ocean management team, positioned globally to provide skilled and local expertise in all major trade lanes backed by our advanced system platform.
@@ -41,7 +41,7 @@ export default function ServicePage() {
     },
     {
       img: "",
-      service: "Custom Clearance",
+      service: "Customs Brokerage",
       content: `We are one of the leading licensed Customs Brokers ensuring smooth and easy customs clearances PAN India. 
       We help ease Import and Export regulations and paperwork in record time for all of your shipments. Handling all the trade compliance and procedures, we help clear consignments by sea, land and air mode efficiently. 
       
@@ -93,7 +93,7 @@ export default function ServicePage() {
     "road-transport",
     "project-forwarding",
   ];
-  
+
   useEffect(() => {
     if (gid) {
       setIndex(title.indexOf(gid));
