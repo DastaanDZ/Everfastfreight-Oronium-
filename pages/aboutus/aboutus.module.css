@@ -8,6 +8,7 @@
   font-weight: 400;
   font-size: 56px;
   margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 .desc {
   font-family: "DM Sans";
@@ -23,12 +24,12 @@
 .info2 {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
 }
 .left {
   margin-right: 1rem;
-  width: 30%;
+  width: 35%;
   /* height: 293px; */
 }
 .right {
@@ -140,6 +141,7 @@
   }
   .heading {
     font-size: 50px;
+    margin-bottom: 1rem;
   }
   .desc {
     font-size: 16px;
@@ -163,12 +165,12 @@
     font-size: 40px;
   }
   .desc {
-    font-size: 14px;
+    font-size: 18px;
   }
   .history_desc {
-    font-size: 16px;
+    font-size: 18px;
   }
   .history_heading {
-    font-size: 40px;
+    font-size: 45px;
   }
 }

@@ -4,6 +4,8 @@ import axios from 'axios'
 import { API_URL } from '../../utils/urls'
 
 const index = ({branches}) => {
+    const sortedResponse = branches.data.sort(function(a, b) { return parseInt(a.id) - parseInt(b.id) });
+    console.log(sortedResponse)
     // console.log(branches)
   return (
     <>

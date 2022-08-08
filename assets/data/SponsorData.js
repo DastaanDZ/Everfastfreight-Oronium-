@@ -13,6 +13,9 @@ import wca from '../images/wca.png'
 import xl from '../images/xl.png'
 import twig from '../images/twig.png'
 import ppl from '../images/ppl.png'
+import phd from '../images/phd.png'
+import acfi from '../images/acfi.png'
+
 
 const SponsorData =[
     { 
@@ -41,6 +44,12 @@ const SponsorData =[
     },
     { 
         pic: dandb,
+    },
+    { 
+        pic: phd,
+    },
+    { 
+        pic: acfi,
     },
     { 
         pic: akaki,

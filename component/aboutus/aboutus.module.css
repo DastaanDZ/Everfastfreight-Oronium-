@@ -1,13 +1,13 @@
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     padding: 0 4rem;
 }
 .left{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 35%;
 }
 .right{
     display: flex;
