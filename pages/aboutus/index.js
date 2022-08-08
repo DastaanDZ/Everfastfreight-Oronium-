@@ -4,6 +4,7 @@ import Button1 from '../../component/button1/Button1'
 import styles from './aboutus.module.css'
 import ProfileData from '../../assets/data/ProfileData'
 import ProfileCard from '../../component/profilecard/ProfileCard'
+import styles2 from '../../component/cards/card.module.css'
 
 const index = () => {
   return (
@@ -24,6 +25,22 @@ const index = () => {
     <div className={styles.space}></div>
 
       <div className={styles.profile}>
+      <p className={styles.team} style={{marginBottom:'2rem'}}>Team</p>
+      <div className={styles2.container}> 
+    <div className={styles2.card2} style={{textAlign: 'center', marginBottom:'2rem'}}>
+        <div className={styles2.title}><p>MR. SUNIL KUMAR</p></div>
+        <div className={styles2.description}>
+        <p>Managing Director</p>
+        </div>
+    </div>
+    <div className={styles2.card1} style={{textAlign: 'center', marginBottom:'2rem'}}>
+        <div className={styles2.title}><p>MR. ARUN KUMAR</p></div>
+        <div className={styles2.description}><p>
+            Managing Director
+        </p>
+        </div>
+    </div>
+    </div>
         {ProfileData.map((item,index) => {
             return(
                 <div className={styles.profile_card} key={index}> 

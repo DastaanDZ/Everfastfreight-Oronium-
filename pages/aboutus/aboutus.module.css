@@ -42,6 +42,7 @@
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
+  text-align: center;
 }
 .profile_card {
   margin-right: 1rem;
@@ -84,7 +85,7 @@
   justify-content: center;
   margin: 2rem 0;
 }
-.history_heading {
+.history_heading, .team {
   width: 80%;
   font-family: "Times New Roman", Times, serif;
   font-style: normal;
@@ -97,6 +98,7 @@
   font-weight: 400;
   font-size: 18px;
 }
+
 @media (max-width: 1220px) {
   .hero {
     width: 300px;
@@ -139,7 +141,7 @@
     width: 100%;
     margin-left: 0px;
   }
-  .heading {
+  .heading, .team {
     font-size: 50px;
     margin-bottom: 1rem;
   }
@@ -161,7 +163,7 @@
   .space {
     margin: 1rem;
   }
-  .heading {
+  .heading ,.team {
     font-size: 40px;
   }
   .desc {
