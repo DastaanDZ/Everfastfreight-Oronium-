@@ -40,6 +40,7 @@ margin-bottom: 3rem;
     font-size: 20px;
     margin-bottom: 1rem;
     word-wrap: break-word;
+    -webkit-line-clamp: 2;
 }
 .learn_more_circle{
     width: 22px;

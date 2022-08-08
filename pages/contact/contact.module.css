@@ -51,6 +51,11 @@
 .contact_us_right {
 	/* padding: 4rem; */
 	width: 30%;
+	font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
 }
 
 .contact_us_right {

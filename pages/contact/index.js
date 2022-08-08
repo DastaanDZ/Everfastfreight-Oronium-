@@ -49,11 +49,10 @@ function Contact() {
 						<p>Send us a message and we&apos;ll get in touch with you as soon as possible</p>
 						<div className={styles.address}>
 						<SubHeading title='Address' icon={message.src} />
-							<p>Goodway Resources
-							1st Floor, Amritha Complex
-							Near Muhamma Bus stand
-							Muhamma P.O
-							Alappuzha - 688525</p>
+							<p>Tel: + 91 120 4184500</p><br></br>
+							<p>info@everfastfreight.com
+							Everfast Freight Forwarders Pvt. Ltd.
+							A-6, 3rd Floor (The Landmark), Sector-2, Noida – 201301 (UP)</p>
 						</div>
 						<div className={styles.phone_social_container}>
 							<div className={styles.phone}>

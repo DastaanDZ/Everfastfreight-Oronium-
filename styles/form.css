@@ -5,12 +5,18 @@ fieldset {
 	flex-direction: column;
 	border: none;
 	margin: 1rem 0;
+	
 }
 
 label {
 	font-size: 0.875rem;
 	margin-bottom: 0.25rem;
 	color: black;
+	font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
 }
 input[type='radio'] {
 	appearance: none;
