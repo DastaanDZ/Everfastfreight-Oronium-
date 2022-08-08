@@ -9,7 +9,7 @@ import { API_URL } from "../../utils/urls";
 
 import { useState } from "react";
 
-const index = () => {
+const Career = () => {
 
   const [form, setForm] = useState({ name: '',country: ''})
 
@@ -88,4 +88,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Career;
