@@ -3,11 +3,12 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'DM Sans', sans-serif;
-    font-size: 26px;
-    margin-bottom: 1.3rem;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
 }
 .ques{
     width: 80%;
+    font-size: 20px;
 }
 .circle{
     display: flex;
@@ -29,9 +30,6 @@
 .ques_ans_container{
     margin-bottom: 3rem;
     border-bottom: 1px solid #E7E7E7;
-}
-.ques{
-    font-size: 26px;
 }
 @media (max-width: 1220px) {
 }
@@ -56,4 +54,13 @@
 
 
 @media (max-width: 550px) {
+    .ques_container{
+        font-size: 18px;
+    }
+    .ans{
+        font-size: 15px;
+    }
+    .ques{
+        font-size: 18px;
+    }
 }
