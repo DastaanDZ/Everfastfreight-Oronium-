@@ -21,7 +21,7 @@ const index = () => {
     <>
     <div className={styles.container}> 
     <div className={styles.card2}>
-        <div className={styles.bullet}><p>1</p></div>
+        {/* <div className={styles.bullet}><p>1</p></div> */}
         <div className={styles.title}><p>Vision</p></div>
         <div className={styles.description}>
         <ul>
@@ -33,7 +33,7 @@ const index = () => {
         </div>
     </div>
     <div className={styles.card1}>
-        <div className={styles.bullet}><p>2</p></div>
+        {/* <div className={styles.bullet}><p>2</p></div> */}
         <div className={styles.title}><p>Approach</p></div>
         <div className={styles.description}>
           <ul>
@@ -45,7 +45,7 @@ const index = () => {
         </div>
     </div>
     <div className={styles.card3} >
-        <div className={styles.bullet}><p>3</p></div>
+        {/* <div className={styles.bullet}><p>3</p></div> */}
         <div className={styles.title}><p>Core Strength</p></div>
         <div className={styles.description}>
         <ul>
