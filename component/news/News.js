@@ -21,7 +21,7 @@ const index = (props) => {
     // const [news,setNews] = useState([])
 
     // useEffect(() => {
-    //     setNews(props.props.data.slice(0,5))
+    //     setNews(props.props.data.slice(0,5))  
     //   }, [news]);
 
     let news =  props.props

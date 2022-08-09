@@ -7,6 +7,7 @@ function MyApp({ Component, pageProps }) {
   return( 
   <>
   <Navbar/> 
+  <div className="space"></div>
   <Component {...pageProps} />
   <Footer/>
   </> 
