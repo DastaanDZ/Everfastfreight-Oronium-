@@ -57,7 +57,7 @@ function Contact() {
 						<div className={styles.phone_social_container}>
 							<div className={styles.phone}>
 							<SubHeading title='Phone' icon={phone.src} />
-								<p>+91 80781 86675</p>
+								<p>+ 91 120 4184500</p>
 							</div>
 							<div className={styles.social}>
 						<SubHeading title='Social' icon={earth.src} />
@@ -82,7 +82,7 @@ function Contact() {
 						</div>
 						<div className="email">
 						<SubHeading title='Email' icon={mail.src} />
-							<p>goodwayresources121@gmail.com</p>
+							<p>info@everfastfreight.com</p>
 						</div>
 					</div>
 

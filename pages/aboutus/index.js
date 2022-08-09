@@ -60,7 +60,8 @@ const index = () => {
         <div className={styles.heading_container}> 
             <p className={styles.heading}>WHAT CAN WE DO FOR YOU?</p>
         </div>
-            <p className={styles.history_desc}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error repellendus nihil eveniet ut sit? Qui repellat, maxime atque alias dolores iste esse quam labore reprehenderit, officiis culpa dicta eos ullam!</p>
+            <p className={styles.history_desc}>We review the transportation needs of our associates in order to provide tailor-made cost-effective shipping system so that the entire responsibility for the shipment is taken over by us from the moment goods are collected from shipper’s warehouse/factory.
+To this end, we stand committed.</p>
             <Button1 text='Services' route='/'/>
         </div>
       </div>
