@@ -1,5 +1,5 @@
 import AboutImg from '../../assets/images/aboutus.jpg'
-import Hero from '../../assets/images/hero.png'
+import Hero from '../../assets/images/about2.jpeg'
 import Button1 from '../../component/button1/Button1'
 import styles from './aboutus.module.css'
 import ProfileData from '../../assets/data/ProfileData'
@@ -54,7 +54,7 @@ const index = () => {
 
       <div className={styles.info2}>
         <div className={styles.left_info2}>
-            <img src={Hero.src} className={styles.hero_img} alt="" />
+            <img src={Hero.src} className={styles.img} alt="" />
         </div>
         <div className={styles.right_info2}>
         <div className={styles.heading_container}> 

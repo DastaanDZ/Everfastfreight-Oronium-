@@ -59,8 +59,9 @@
   height: 100%;
 }
 .left_info2 {
-  width: 424px;
-  height: 540px;
+  width: 520px;
+  height: 477px;
+  text-align: center;
 }
 .right_info2 {
   margin-left: 3rem;
@@ -104,7 +105,7 @@
     width: 300px;
     height: 382.075px;
   }
-  .right {
+  .right,.left_info2 {
     width: 400px;
     height: 367px;
   }
@@ -114,7 +115,7 @@
 }
 
 @media (max-width: 900px) {
-  .right{
+  .right ,.left_info2{
     width: 100%;
     display: flex;
     align-items: center;
@@ -123,10 +124,6 @@
   .img{
     width: 400px;
     height: 367px;
-  }
-  .left_info2 {
-    width: 300px;
-    height: 382.075px;
   }
   .container {
     padding: 0 2rem;
