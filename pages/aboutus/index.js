@@ -27,14 +27,14 @@ const index = () => {
       <div className={styles.profile}>
       <p className={styles.team} style={{marginBottom:'2rem'}}>Team</p>
       <div className={styles2.container}> 
-    <div className={styles2.card2} style={{textAlign: 'center', marginBottom:'2rem'}}>
-        <div className={styles2.title}><p>MR. SUNIL KUMAR</p></div>
+    <div className={styles2.card2_contact} style={{textAlign: 'center', marginBottom:'2rem'}}>
+        <div className={styles2.name}><p>MR. SUNIL KUMAR</p></div>
         <div className={styles2.description}>
         <p>Managing Director</p>
         </div>
     </div>
-    <div className={styles2.card1} style={{textAlign: 'center', marginBottom:'2rem'}}>
-        <div className={styles2.title}><p>MR. ARUN KUMAR</p></div>
+    <div className={styles2.card1_contact} style={{textAlign: 'center', marginBottom:'2rem'}}>
+        <div className={styles2.name}><p>MR. ARUN KUMAR</p></div>
         <div className={styles2.description}><p>
             Managing Director
         </p>

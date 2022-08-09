@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     /* margin-bottom: var(--div-margin);
     color: var(--div-color); */
+    gap: 1rem;
 }
 .card1,.card2,.card3{
     display: flex;
@@ -19,10 +20,19 @@
     margin-bottom: 3rem;
 
 }
-.card1{
+.card1_contact .card2_contact{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* margin-right: 5rem; */
+    height: auto;
+    width: 336px;
+    margin-bottom: 3rem;
+}
+.card1, .card1_contact{
     border-bottom: 4px solid #26B567;
 }
-.card2{
+.card2, .card2_contact{
     border-bottom: 4px solid #FED130;
 }
 .card3{
@@ -65,6 +75,9 @@
 .description ul{
     list-style: circle;
 }
+.name{
+    font-size: 30px;
+}
 @media (max-width: 1220px) {
     .card2{
         margin-right: 0;
@@ -85,11 +98,17 @@
     .container{
         padding: 0 2rem;
     }
+    .name{
+        font-size: 28px;
+    }
 }
 
 
 @media (max-width: 550px) {
     .title{
         font-size: 35px;
+    }
+    .name{
+        font-size: 25px;
     }
 }
