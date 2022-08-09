@@ -35,7 +35,7 @@ const index = () => {
             return (
               <div className={styles.content} key={items.index}>
                 <div className={styles.left}>
-                  <img src={items.pic.src} className={styles.pic} alt="" />
+                  <img src={items.pic} className={styles.pic} alt="" />
                   <p className={styles.services_types}>{items.title}</p>
                 </div>
                 <Link href={`/services/${title[items.index]}`}>
