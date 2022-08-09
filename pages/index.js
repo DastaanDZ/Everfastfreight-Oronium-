@@ -19,7 +19,7 @@ import axios from 'axios';
 import Sponsor from '../component/sponsors/Sponsor'
 import { API_URL } from '../utils/urls'
 
-export default function Home({news, gallery}) {
+export default function Home({news, gallery, blogs}) {
   // console.log('gallery',news)
   // console.log('news',gallery)
   return (
@@ -45,7 +45,7 @@ export default function Home({news, gallery}) {
       <div className={styles.space}></div> */}
       <Gallery props={gallery.data}/>
       <div className={styles.space}></div>
-      <Blog props={news.data}/>
+      <Blog props={blogs.data}/>
       <div className={styles.space}></div>
       <News props={news.data}/>
       <div className={styles.space}></div>
@@ -86,15 +86,18 @@ export default function Home({news, gallery}) {
 //   return {
 //       props: {newsRes,galleryRes}}
 //   }
+// const blogsRes = await axios.get(`${API_URL}/api/blogs?populate=*`);
 
 export async function getServerSideProps() {
-  const [newsRes, galleryRes] = await Promise.all([
+  const [newsRes, galleryRes, blogsRes] = await Promise.all([
     fetch(`${API_URL}/api/news?populate=*`), 
-    fetch(`${API_URL}/api/galleries?populate=*`)
+    fetch(`${API_URL}/api/galleries?populate=*`),
+    fetch(`${API_URL}/api/blogs?populate=*`)
   ]);
-  const [news, gallery] = await Promise.all([
+  const [news, gallery, blogs] = await Promise.all([
     newsRes.json(), 
-    galleryRes.json()
+    galleryRes.json(),
+    blogsRes.json()
   ]);
-  return { props: { news, gallery } };
+  return { props: { news, gallery,blogs } };
 }
