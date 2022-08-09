@@ -3,7 +3,9 @@ import styles from './allnb.module.css'
 import NewsCard from '../newscard/NewsCard'
 
 const AllNB = ({news,title,type}) => {
-    console.log('ALLNB', news)
+
+    console.log('ALLNB', news.data[0].attributes.title)
+
   return (
     <div className={styles.news_page}>
         <p className={styles.title}>{title}</p>

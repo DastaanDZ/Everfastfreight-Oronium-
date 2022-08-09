@@ -9,6 +9,9 @@ import Link from 'next/link';
 
 const index = (props) => {
 
+    const sortedResponse = props.props.sort(function(a, b) { return parseInt(a.id) - parseInt(b.id) });
+    console.log(sortedResponse)
+
     // const ref1 = useRef(null)
     // const ref2 = useRef(null)
     // const ref3 = useRef(null)
@@ -25,7 +28,7 @@ const index = (props) => {
     //   }, [news]);
 
     let news =  props.props.slice(0,4)
-    // console.log(news)
+    console.log('NEWS',news)
 
     // console.log(props.props.data[0].attributes.image.data.attributes.formats.medium.url)
   return (
