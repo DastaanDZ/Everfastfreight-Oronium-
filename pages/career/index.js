@@ -11,7 +11,7 @@ import { useState } from "react";
 
 function Career(){
 
-  const [form, setForm] = useState({ name: '',country: ''})
+  const [form, setForm] = useState({ name: '',phone: '',address:'',email:'',resume:''})
 
     const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value })
@@ -66,14 +66,53 @@ function Career(){
             />
           </fieldset>
           <fieldset className={styles3.fieldset}>
-            <label className={styles3.label}>Country</label>
+            <label className={styles3.label}>Phone Number</label>
             <input
               type="text"
-              name="country"
+              name="phone"
               placeholder=""
               autoComplete="off"
               required
-              value={form.country}
+              value={form.phone}
+							onChange={handleChange}
+              className={styles3.input}
+            />
+          </fieldset>
+          <fieldset className={styles3.fieldset}>
+            <label className={styles3.label}>Address</label>
+            <input
+              type="text"
+              name="address"
+              placeholder=""
+              autoComplete="off"
+              required
+              value={form.address}
+							onChange={handleChange}
+              className={styles3.input}
+            />
+          </fieldset>
+          <fieldset className={styles3.fieldset}>
+            <label className={styles3.label}>Email Id</label>
+            <input
+              type="text"
+              name="email"
+              placeholder=""
+              autoComplete="off"
+              required
+              value={form.email}
+							onChange={handleChange}
+              className={styles3.input}
+            />
+          </fieldset>
+          <fieldset className={styles3.fieldset}>
+            <label className={styles3.label}>Resume</label>
+            <input
+              type="text"
+              name="resume"
+              placeholder=""
+              autoComplete="off"
+              required
+              value={form.resume}
 							onChange={handleChange}
               className={styles3.input}
             />

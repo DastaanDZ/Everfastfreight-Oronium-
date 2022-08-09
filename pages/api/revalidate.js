@@ -60,6 +60,10 @@ import Cors from "cors";
    switch (model) {
     case 'new':
         return ['/news',`/news/${entry.id}`]
+    case 'blog':
+        return ['/blogs',`/blogs/${entry.id}`]
+    case 'branch':
+        return ['/news']
     default:
         break;
    }
