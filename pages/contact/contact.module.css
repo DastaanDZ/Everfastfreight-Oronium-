@@ -1,9 +1,10 @@
 .contact_container {
 	display: flex;
 	flex-direction: column;
+	padding: 0 4rem;
 }
 .container{
-	padding: 2rem;
+	padding: 0 4rem;
 }
 .overlap {
 	display: flex;
@@ -41,16 +42,23 @@
 	/* background: brown; */
 	display: flex;
 	width: 100%;
-	align-items: center;
-	justify-content: center;
+	/* align-items: center; */
+	justify-content: space-between;
 	/* max-width: 1000px; */
 	border-radius: 0.75rem;
 }
 
-.contact_us_left,
-.contact_us_right {
+.contact_us_left{
 	/* padding: 4rem; */
-	width: 30%;
+	width: 50%;
+	font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+}
+.contact_us_right {
+	width: 28rem;
 	font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
@@ -103,6 +111,8 @@ line-height: 23px;
 	display: flex;
 	border-radius: 100%;
 	color: white;
+	width: 70%;
+	justify-content: space-between;
 }
 
 .contact_icon_wrapper.social_icon {
@@ -142,17 +152,12 @@ line-height: 23px;
 }
 .phone_social_container{
 	display: flex;
+	width: 70%;
+	justify-content: space-between;
 }
 .address{
 	width: 50%;
 	margin: 2rem 0;
-}
-@media screen and (max-width: 450px) {
-	.header_contact {
-		flex-direction: column;
-		font-family: 'Clash Display', sans-serif;
-		top: -7rem;
-	}
 }
 
 @media (max-width: 1220px) {
@@ -166,13 +171,34 @@ line-height: 23px;
 	.contact_us {
 		flex-direction: column;
 	}
-	.contact_us_left {
+	.info{
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
 		/* border-right: none; */
 		/* border-bottom: 1px solid #2c2c2c; */
 		width: 100%;
 	}
-	.contact_us_right {
+	.contact_us_left {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		/* border-right: none; */
+		/* border-bottom: 1px solid #2c2c2c; */
 		width: 100%;
+	}
+	.form_container{
+		width: 100%;
+		/* text-align: center; */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+	}
+	.contact_us_right {
+		/* width: 100%; */
 	}
 
 	.git_content {
@@ -185,6 +211,9 @@ line-height: 23px;
 	.contact_us_right{
 		margin: 0px;
 		margin-top: 3rem;
+	}
+	.container{
+		padding: 0 2rem;
 	}
 }
 
@@ -216,4 +245,7 @@ line-height: 23px;
 	/* .social {
 		margin-top: 1rem;
 	} */
+	.container{
+		padding: 0 1rem;
+	}
 }

@@ -44,7 +44,7 @@ function Contact() {
 		<div className={styles.container}>
 			<div className={styles.contact_us}>
 				<div className={styles.contact_us_left}>
-					<div>
+					<div className={styles.info}>
 						<SubHeading title='Get in touch' icon={hand.src} />
 						<p>Send us a message and we&apos;ll get in touch with you as soon as possible</p>
 						<div className={styles.address}>
@@ -87,7 +87,7 @@ function Contact() {
 					</div>
 
 				</div>
-
+				<div className={styles.form_container}> 
 				<form className={styles.contact_us_right} onSubmit={handleSubmit}>
 					<SubHeading title='Message' icon={message.src} />
 
@@ -135,6 +135,7 @@ function Contact() {
 						Submit
 					</button>
 				</form>
+				</div>
 			</div>
 		</div>
 	)
