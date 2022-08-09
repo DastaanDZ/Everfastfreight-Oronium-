@@ -24,8 +24,8 @@ const index = (props) => {
     //     setNews(props.props.data.slice(0,5))
     //   }, [news]);
 
-    let news =  props.props.slice(0,4)
-    // console.log(news)
+    let news =  props.props
+    console.log('news',news.sort((a,b)=>b.id-a.id))
 
     // console.log(props.props.data[0].attributes.image.data.attributes.formats.medium.url)
   return (

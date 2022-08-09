@@ -7,12 +7,15 @@ import styles3 from './career.module.css'
 import axios from 'axios'
 import { API_URL } from "../../utils/urls";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { useState } from "react";
 
 function Career(){
 
-  const [form, setForm] = useState({ name: '',phone: '',address:'',email:'',resume:''})
-
+  const [form, setForm] = useState({ name: '',phone: '',address:'',email:''})
+  const [file,setFile]=useState(null)
     const handleChange = (e) => {
 		setForm({ ...form, [e.target.name]: e.target.value })
 	}
@@ -20,19 +23,41 @@ function Career(){
 	async function handleSubmit(e) {
 		e.preventDefault()
 		// http://localhost:1337/admin/settings/application-infos
+
+    const id = toast.loading("Please wait...");
 		const formRes = await axios.post(`${API_URL}/api/careers`,{
 			data: { 
-
 				name: form.name,
-				country: form.country
+				// country: form.country
+        phone: form.phone,
+        address: form.address,
+        email: form.email,
+
 			}
 		})
-		console.log(formRes)
+    const form2=new FormData()
+    form2.append("ref","api::career.career")
+    form2.append("refId",formRes.data.data.id)
+    form2.append("field","resume")
+    form2.append("files", file[0])
+    
+    const res=await axios.post(`${API_URL}/api/upload`,form2);
+    if(res.status==200){
+      toast.update(id, {
+        render: "Submission Added",
+        type: "success",
+        isLoading: false,
+        autoClose: 3000,
+      });
+    }
+    
 	}
+
 
 
   return (
     <>
+    <ToastContainer/>
       <div className={styles.container}>
         <div className={styles.info}>
           <div className={styles.left}>
@@ -107,13 +132,14 @@ function Career(){
           <fieldset className={styles3.fieldset}>
             <label className={styles3.label}>Resume</label>
             <input
-              type="text"
+              type="file"
               name="resume"
               placeholder=""
               autoComplete="off"
               required
-              value={form.resume}
-							onChange={handleChange}
+							onChange={(e)=>{
+                setFile(e.target.files)
+              }}
               className={styles3.input}
             />
           </fieldset>

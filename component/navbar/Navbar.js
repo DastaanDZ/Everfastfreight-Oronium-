@@ -8,6 +8,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [toggleLiMob, setToggleLiMob] = useState(false);
   const [toggleLi, setToggleLi] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
 
@@ -21,7 +22,11 @@ const Navbar = () => {
   };
 
   const style2 = {
+    display: toggleLiMob ? "block" : "none",
+  };
+  const style3 = {
     display: toggleLi ? "block" : "none",
+    position: 'absolute',
   };
   // console.log(toggleLi)
 
@@ -54,7 +59,7 @@ const Navbar = () => {
           </Link>
           <li className={styles.li} onClick={() => console.log("hello")}>
             <p className={styles.services_li}>
-              Services{" "}
+              <p className={styles.services}>Services</p>
               {toggleLi ? (
                 <BiDownArrow
                   className={styles.down_arrow}
@@ -66,30 +71,67 @@ const Navbar = () => {
                   onClick={() => setToggleLi(!toggleLi)}
                 />
               )}
+              {toggleLiMob ? (
+                <BiDownArrow
+                  className={styles.down_arrow_mob}
+                  onClick={() => setToggleLiMob(!toggleLiMob)}
+                />
+              ) : (
+                <BiUpArrow
+                  className={styles.down_arrow_mob}
+                  onClick={() => setToggleLi(!toggleLiMob)}
+                />
+              )}
             </p>
             <div
-              className={styles.dropdown_services}
-              style={{ display: showDropDown ? "block" : "none" }}
-            >
+              className={styles.dropdown_services} style={style3}>
               <ul>
-                <li>Air Freight</li>
-                <li>Ocean freight</li>
-                <li>Warehousing</li>
-                <li>Customs Brokerage</li>
-                <li>Door to Door Services</li>
-                <li>Road Transport</li>
-                <li>Project Forwarding</li>
+              <Link href='/services/air-freight'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Air Freight</li>
+              </Link>
+                <Link href='/services/sea-freight'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Ocean freight</li>
+              </Link>
+                <Link href='/services/warehousing'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Warehousing</li>
+              </Link>
+                <Link href='/services/custom-brokerage'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Customs Brokerage</li>
+              </Link>
+                <Link href='/services/door-to-door'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Door to Door Services</li>
+              </Link>
+                <Link href='/services/road-transport'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Road Transport</li>
+              </Link>
+                <Link href='/services/project-forwarding'> 
+                <li onClick={() => setToggleLi(!toggleLi)}>Project Forwarding</li>
+              </Link>
               </ul>
             </div>
             <div className={styles.dropdown_services_mob} style={style2}>
               <ul>
-                <li>Air Freight</li>
-                <li>Ocean freight</li>
-                <li>Warehousing</li>
-                <li>Customs Brokerage</li>
-                <li>Door to Door Services</li>
-                <li>Road Transport</li>
-                <li>Project Forwarding</li>
+              <Link href='/services/air-freight'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Air Freight</li>
+              </Link>
+                <Link href='/services/sea-freight'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Ocean freight</li>
+              </Link>
+                <Link href='/services/warehousing'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Warehousing</li>
+              </Link>
+                <Link href='/services/custom-brokerage'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Customs Brokerage</li>
+              </Link>
+                <Link href='/services/door-to-door'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Door to Door Services</li>
+              </Link>
+                <Link href='/services/road-transport'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Road Transport</li>
+              </Link>
+                <Link href='/services/project-forwarding'> 
+                <li onClick={() => setToggleLi(!toggleLiMob)}>Project Forwarding</li>
+              </Link>
               </ul>
             </div>
           </li>

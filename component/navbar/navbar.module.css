@@ -35,13 +35,11 @@
 .dropdown_services ul{
   position: absolute;
   background-color: white;
+  width: 15rem;
 }
 .dropdown_services ul{
   padding-left: 1rem;
   margin-top: 1rem;
-}
-.down_arrow{
-  display: none;
 }
 .para {
   margin: 0px;
@@ -52,7 +50,14 @@
 .close {
   display: none;
 }
-
+.services_li{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.down_arrow_mob{
+  display: none;
+}
 @media (max-width: 1220px) {
 }
 
@@ -86,13 +91,19 @@
     margin: 0px;
     transition: all 0.5s ease;
   }
-  .down_arrow{
+  .down_arrow_mob{
     display: inline-flex;
+  }
+  .down_arrow{
+    display: none;
   }
   .services_li{
     display: flex;
     justify-content: space-between;
   }
+  /* .services{
+    margin-right: 0.5rem;
+  } */
   .navbar_container {
     padding: 0 2rem;
   }
