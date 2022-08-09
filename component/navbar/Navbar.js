@@ -55,7 +55,7 @@ const Navbar = () => {
             />
           </div>
           <Link href='/'> 
-          <li>Home</li>
+          <li className={styles.li}>Home</li>
           </Link>
           <li className={styles.li} onClick={() => console.log("hello")}>
             <p className={styles.services_li}>
