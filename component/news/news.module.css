@@ -60,8 +60,8 @@
     align-items: center;
 }
 .heading{
-    font-family: 'Newsreader', serif;
-    font-size: 56px;
+    /* font-family: 'Newsreader', serif; */
+    /* font-size: 56px; */
 }
 .news_title{
     font-family: 'DM Sans', sans-serif;

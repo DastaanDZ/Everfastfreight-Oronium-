@@ -19,7 +19,7 @@ const index = () => {
     <>
       <div className={styles.container} id="services">
         <div className={styles.title}>
-          <p className={styles.heading}>Services</p>
+          <h2>Services</h2>
           <p className={styles.desc}></p>
           <Link href="/contact">
             <div className={styles.btn}>

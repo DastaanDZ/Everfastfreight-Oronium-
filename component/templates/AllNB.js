@@ -8,7 +8,7 @@ const AllNB = ({news,title,type}) => {
 
   return (
     <div className={styles.news_page}>
-        <p className={styles.title}>{title}</p>
+        <h2>{title}</h2>
         <div className={styles.news_container}> 
         {news.data.map((items, index) => {
             console.log('item',items)

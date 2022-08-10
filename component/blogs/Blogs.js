@@ -19,7 +19,7 @@ const index = (props) => {
     <>
     <div className={styles.container}>
     <div className={styles.title}> 
-        <p className={styles.heading}>Blog</p>
+        <h2>Blog</h2>
         <Button1 text='More Blogs' route='/blogs'/>
     </div>
 

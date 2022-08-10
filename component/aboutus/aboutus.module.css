@@ -38,7 +38,7 @@
 .heading{
     font-family: 'Newsreader', serif;
     font-size: 56px;
-    margin-bottom: 56px;
+    /* margin-bottom: 56px; */
 }
 .desc{
     font-family: 'DM Sans', sans-serif;

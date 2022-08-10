@@ -58,7 +58,7 @@ const index = (props) => {
     <>
     <div className={styles.container}>
     <div className={styles.title}> 
-        <p>Gallery</p>
+        <h2>Gallery</h2>
         <div className={styles.learnmore}> 
             <div className={styles.more_news_circle} onClick = {() => ref.current.slickPrev()}>
             <BsArrowLeft/>

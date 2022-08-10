@@ -88,7 +88,7 @@ export default function ServicePage() {
     "air-freight",
     "sea-freight",
     "warehousing",
-    "custom-clearance",
+    "custom-brokerage",
     "door-to-door",
     "road-transport",
     "project-forwarding",
@@ -105,7 +105,7 @@ export default function ServicePage() {
       <div className={styles.info}>
         <div className={styles.left}>
         <div className={styles.heading_container}> 
-          <p className={styles.heading}>{data[index].service}</p>
+          <h2>{data[index].service}</h2>
         </div>
           <p className={styles.desc}>{data[index].content}</p>
           <Button1 text="Contact Us" route="/contact" />

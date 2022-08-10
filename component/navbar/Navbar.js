@@ -51,9 +51,11 @@ const Navbar = () => {
             />
           </div>
           <Link href='/'> 
-          <li className={styles.li}>Home</li>
+          <li className={styles.li} onClick={() => {
+                setToggle(!toggle);
+              }}>Home</li>
           </Link>
-          <li className={styles.li} onClick={() => console.log("hello")}>
+          <li className={styles.li}>
             <p className={styles.services_li}>
               <p className={styles.services}>Services</p>
               <div className={styles.toggleLi}> 
@@ -87,7 +89,7 @@ const Navbar = () => {
               className={styles.dropdown_services} style={style3}>
               <ul className={styles.dropdown_services_ul}>
               <Link href='/services/air-freight'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Air Freight</li>
+                <li onClick={() => setToggleLi(!toggleLi)} >Air Freight</li>
               </Link>
                 <Link href='/services/sea-freight'> 
                 <li onClick={() => setToggleLi(!toggleLi)}>Ocean freight</li>
@@ -136,16 +138,24 @@ const Navbar = () => {
             </div>
           </li>
           <Link href="/aboutus">
-            <li className={styles.li}>About</li>
+            <li className={styles.li} onClick={() => {
+                setToggle(!toggle);
+              }}>About</li>
           </Link>
           <Link href="/branches">
-            <li className={styles.li}>Branches</li>
+            <li className={styles.li} onClick={() => {
+                setToggle(!toggle);
+              }}>Branches</li>
           </Link>
           <Link href="/career">
-            <li className={styles.li}>Career</li>
+            <li className={styles.li} onClick={() => {
+                setToggle(!toggle);
+              }}>Career</li>
           </Link>
           <Link href="/contact">
-            <li className={styles.li}>Contact</li>
+            <li className={styles.li} onClick={() => {
+                setToggle(!toggle);
+              }}>Contact</li>
           </Link>
         </ul>
       </div>

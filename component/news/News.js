@@ -32,7 +32,7 @@ const index = (props) => {
     <>
     <div className={styles.container}>
     <div className={styles.title}> 
-        <p className={styles.heading}>News</p>
+        <h2>News</h2>
         <Button1 text='More News' route='/news'/>
     </div>
 

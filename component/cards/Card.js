@@ -22,7 +22,7 @@ const index = () => {
     <div className={styles.container}> 
     <div className={styles.card2}>
         {/* <div className={styles.bullet}><p>1</p></div> */}
-        <div className={styles.title}><p>Vision</p></div>
+        <div><h2>Vision</h2></div>
         <div className={styles.description}>
         <ul>
             <li>To be the leading service provider, distinguished by the quality of our services that benefits our customers</li>
@@ -34,7 +34,7 @@ const index = () => {
     </div>
     <div className={styles.card1}>
         {/* <div className={styles.bullet}><p>2</p></div> */}
-        <div className={styles.title}><p>Approach</p></div>
+        <div><h2>Approach</h2></div>
         <div className={styles.description}>
           <ul>
             <li>Starts with knowing our customers.</li>
@@ -46,7 +46,7 @@ const index = () => {
     </div>
     <div className={styles.card3} >
         {/* <div className={styles.bullet}><p>3</p></div> */}
-        <div className={styles.title}><p>Core Strength</p></div>
+        <div><h2>Core Strength</h2></div>
         <div className={styles.description}>
         <ul>
             <li>Cost Effective</li>

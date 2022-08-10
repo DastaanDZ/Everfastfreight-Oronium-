@@ -12,7 +12,7 @@ const index = () => {
       <div className={styles.info}>
         <div className={styles.left}>
         <div className={styles.heading_container}> 
-            <p className={styles.heading}>About Us</p>
+            <h1>About Us</h1>
         </div>
             <p className={styles.desc}>Ever fast Freight Forwarders Pvt. Ltd., was founded in 1997 with motive to OFFER PEACE OF MIND, is an IATA recognized freight forwarder and are ISO 9001:2008 certified company by URS. We specialize in air, sea, export, and imports. We strongly believe that we are into communication business and transportation is part of it. Equipped with the array of services we are well prepared to accept any challenges evolved from current market trends and Endeavour to encourage your aspirations. We value time. The rules and regulations of international trade become more complex every day. It is vital that every exporter and importer sophisticated or novice, outsource these functions to experts who are experienced, informed and dedicated to the ultimate success of their business partnership.</p>
             <Button1 text='Contact Us' route='/contact'/>
@@ -25,7 +25,7 @@ const index = () => {
     <div className={styles.space}></div>
 
       <div className={styles.profile}>
-      <p className={styles.team} style={{marginBottom:'2rem'}}>Team</p>
+      <h2 style={{marginBottom:'2rem'}}>Team</h2>
       <div className={styles2.container}> 
     <div className={styles2.card2_contact} style={{textAlign: 'center', marginBottom:'2rem'}}>
         <div className={styles2.name}><p>MR. SUNIL KUMAR</p></div>
@@ -58,7 +58,7 @@ const index = () => {
         </div>
         <div className={styles.right_info2}>
         <div className={styles.heading_container}> 
-            <p className={styles.history_heading}>WHAT CAN WE DO FOR YOU?</p>
+            <h2>WHAT CAN WE DO FOR YOU?</h2>
         </div>
             <p className={styles.history_desc}>We review the transportation needs of our associates in order to provide tailor-made cost-effective shipping system so that the entire responsibility for the shipment is taken over by us from the moment goods are collected from shipper’s warehouse/factory.
 To this end, we stand committed.</p>
@@ -70,7 +70,7 @@ To this end, we stand committed.</p>
 
     <div className={styles.history}>
     <div className={styles.history_heading_container}> 
-        <p className={styles.history_heading}>SPECIALISATION VALUE FOR MONEY AND TIME</p>
+        <h2>SPECIALISATION VALUE FOR MONEY AND TIME</h2>
     </div>
     <div className={styles.history_desc}> 
         <p>Ever fast Freight Forwarders Pvt. Ltd., was founded in 1997 with motive to OFFER PEACE OF MIND, is an IATA recognized freight forwarder and are ISO 9001:2008 certified company by URS. We specialize in air, sea, export, and imports. We strongly believe that we are into communication business and transportation is part of it. Equipped with the array of services we are well prepared to accept any challenges evolved from current market trends and Endeavour to encourage your aspirations. We value time. The rules and regulations of international trade become more complex every day. It is vital that every exporter and importer sophisticated or novice, outsource these functions to experts who are experienced, informed and dedicated to the ultimate success of their business partnership.</p>

@@ -7,7 +7,7 @@ const Faqs = () => {
     <>
     <div className={styles.container}> 
     <div className={styles.title}>
-        <p>FAQs</p>
+        <h2>FAQs</h2>
         <div className={styles.circle}>
             <p>5</p>
         </div>
