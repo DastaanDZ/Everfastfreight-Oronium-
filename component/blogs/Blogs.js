@@ -12,25 +12,9 @@ const index = (props) => {
     const sortedResponse = props.props.sort(function(a, b) { return parseInt(a.id) - parseInt(b.id) });
     console.log(sortedResponse)
 
-    // const ref1 = useRef(null)
-    // const ref2 = useRef(null)
-    // const ref3 = useRef(null)
-  
-    // useEffect(() => {
-    //   setHeight(Math.max(ref1.current.offsetHeight, ref2.current.offsetHeight, ref3.current.offsetHeight));
-    // },[])
-
-    // console.log('news',props.props)
-    // const [news,setNews] = useState([])
-
-    // useEffect(() => {
-    //     setNews(props.props.data.slice(0,5))
-    //   }, [news]);
-
     let news =  props.props.slice(0,4)
     console.log('NEWS',news)
 
-    // console.log(props.props.data[0].attributes.image.data.attributes.formats.medium.url)
   return (
     <>
     <div className={styles.container}>
