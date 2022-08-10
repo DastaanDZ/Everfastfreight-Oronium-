@@ -172,7 +172,7 @@ line-height: 23px;
 		flex-direction: column;
 	}
 	.info{
-		align-items: center;
+		/* align-items: center; */
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
@@ -181,7 +181,7 @@ line-height: 23px;
 		width: 100%;
 	}
 	.contact_us_left {
-		align-items: center;
+		/* align-items: center; */
 		justify-content: center;
 		display: flex;
 		flex-direction: column;
