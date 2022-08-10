@@ -216,6 +216,9 @@ line-height: 23px;
 	.container{
 		padding: 0 2rem;
 	}
+	.phone_social_container{
+		width: 100%;
+	}
 }
 
 @media (max-width: 550px) {
