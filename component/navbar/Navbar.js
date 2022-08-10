@@ -89,50 +89,50 @@ const Navbar = () => {
               className={styles.dropdown_services} style={style3}>
               <ul className={styles.dropdown_services_ul}>
               <Link href='/services/air-freight'> 
-                <li onClick={() => setToggleLi(!toggleLi)} >Air Freight</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}} >Air Freight</li>
               </Link>
                 <Link href='/services/sea-freight'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Ocean freight</li>
+                <li oonClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Ocean freight</li>
               </Link>
                 <Link href='/services/warehousing'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Warehousing</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Warehousing</li>
               </Link>
                 <Link href='/services/custom-brokerage'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Customs Brokerage</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Customs Brokerage</li>
               </Link>
                 <Link href='/services/door-to-door'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Door to Door Services</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Door to Door Services</li>
               </Link>
                 <Link href='/services/road-transport'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Road Transport</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Road Transport</li>
               </Link>
                 <Link href='/services/project-forwarding'> 
-                <li onClick={() => setToggleLi(!toggleLi)}>Project Forwarding</li>
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Project Forwarding</li>
               </Link>
               </ul>
             </div>
             <div className={styles.dropdown_services_mob} style={style2}>
               <ul className={styles.dropdown_services_mob_ul}>
               <Link href='/services/air-freight'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Air Freight</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Air Freight</li>
               </Link>
                 <Link href='/services/sea-freight'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Ocean freight</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Ocean freight</li>
               </Link>
                 <Link href='/services/warehousing'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Warehousing</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Warehousing</li>
               </Link>
                 <Link href='/services/custom-brokerage'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Customs Brokerage</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Customs Brokerage</li>
               </Link>
                 <Link href='/services/door-to-door'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Door to Door Services</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Door to Door Services</li>
               </Link>
                 <Link href='/services/road-transport'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Road Transport</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Road Transport</li>
               </Link>
                 <Link href='/services/project-forwarding'> 
-                <li onClick={() => setToggleLiMob(!toggleLiMob)}>Project Forwarding</li>
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Project Forwarding</li>
               </Link>
               </ul>
             </div>
