@@ -90,8 +90,8 @@
   width: 80%;
   font-family: 'Newsreader', serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
+  font-weight: 200;
+  font-size: 44px;
 }
 .history_desc {
   font-family: "DM Sans";
@@ -156,7 +156,7 @@
     font-size: 18px;
   }
   .history_heading {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 
@@ -165,7 +165,7 @@
     font-size: 40px;
   }
   .history_heading{
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 
@@ -183,7 +183,7 @@
     font-size: 18px;
   }
   .history_heading {
-    font-size: 35px;
+    font-size: 28px;
   }
   .img{
     width: 321px;

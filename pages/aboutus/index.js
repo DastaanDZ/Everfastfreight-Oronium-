@@ -58,7 +58,7 @@ const index = () => {
         </div>
         <div className={styles.right_info2}>
         <div className={styles.heading_container}> 
-            <p className={styles.heading}>WHAT CAN WE DO FOR YOU?</p>
+            <p className={styles.history_heading}>WHAT CAN WE DO FOR YOU?</p>
         </div>
             <p className={styles.history_desc}>We review the transportation needs of our associates in order to provide tailor-made cost-effective shipping system so that the entire responsibility for the shipment is taken over by us from the moment goods are collected from shipper’s warehouse/factory.
 To this end, we stand committed.</p>

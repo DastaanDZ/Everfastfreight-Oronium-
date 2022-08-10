@@ -7,9 +7,9 @@
 	margin-right: 1rem;
 }
 .sub_heading {
-	font-family: 'Clash Display', sans-serif;
+	font-family: 'Newsreader', serif;
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 @media (max-width: 550px) {

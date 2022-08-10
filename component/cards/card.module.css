@@ -9,6 +9,8 @@
     /* margin-bottom: var(--div-margin);
     color: var(--div-color); */
     gap: 1rem;
+    font-family: 'Newsreader', serif;
+
 }
 .card1,.card2,.card3{
     display: flex;
