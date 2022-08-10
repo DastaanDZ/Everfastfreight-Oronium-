@@ -1,11 +1,12 @@
 .container{
     width: 100%;
+    padding: 0 4rem;
 }
 .title{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-family: 'Newsreader', serif;
     font-size: 56px;
 }
@@ -16,7 +17,11 @@
 .heading{
     width: 80%;
 }
-
+@media (max-width: 756px) {
+    .container{
+        padding: 0 2rem;
+    }
+}
 
 @media (max-width: 550px) {
     .title{
@@ -27,5 +32,8 @@
     }
     .heading{
         width: 100%;
+    }
+    .container{
+        padding: 0 1rem;
     }
 }
