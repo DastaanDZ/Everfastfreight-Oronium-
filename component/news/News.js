@@ -45,6 +45,8 @@ const index = (props) => {
                 <div key={index} className={styles.news}>
             <NewsCard img={items.attributes.image.data.attributes.url}
             desc={items.attributes.title}
+            type='news'
+            id={items.id}
             />
             </div>
             )
