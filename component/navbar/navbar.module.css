@@ -15,7 +15,7 @@
 }
 .logo {
   width: 200.21px;
-height: 60.21px;
+  height: 60.21px;
 }
 .ul {
   display: flex;
@@ -27,26 +27,31 @@ height: 60.21px;
   margin-bottom: 0px;
   cursor: pointer;
 }
-.dropdown_services_mob{
+.dropdown_services_mob {
   display: none;
   /* padding-left: 1rem; */
   margin-top: 1rem;
 }
-.dropdown_services_ul{
+.dropdown_services_ul {
   position: absolute;
   background-color: white;
   width: 15rem;
-  background: #FFFFFF;
-box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11); border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11);
+  border-radius: 10px;
   padding: 1.5rem;
-  margin-top: 1rem;
+  margin-top: -0.3rem;
   -webkit-animation: fadein 0.3s ease-in;
   -moz-animation: fadein 0.3s ease-in;
   animation: fadein 0.3s ease-in;
 }
 @keyframes fadein {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .para {
   margin: 0px;
@@ -57,15 +62,15 @@ box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11); border-radius: 10px;
 .close {
   display: none;
 }
-.services_li{
+.services_li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-.down_arrow_mob{
+.down_arrow_mob {
   display: none;
 }
-.toggleLiMob{
+.toggleLiMob {
   display: none;
 }
 @media (max-width: 1220px) {
@@ -78,10 +83,10 @@ box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11); border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-  .dropdown_services{
+  .dropdown_services {
     display: none;
   }
-  .dropdown_services_mob{
+  .dropdown_services_mob {
     display: block;
   }
   .close {
@@ -101,13 +106,13 @@ box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11); border-radius: 10px;
     margin: 0px;
     transition: all 0.5s ease;
   }
-  .down_arrow_mob{
+  .down_arrow_mob {
     display: inline-flex;
   }
-  .down_arrow{
+  .down_arrow {
     display: none;
   }
-  .services_li{
+  .services_li {
     display: flex;
     justify-content: space-between;
   }
@@ -130,10 +135,10 @@ box-shadow: 0px 12px 39px -2px rgba(119, 119, 119, 0.11); border-radius: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin-left: 0px;
   }
-  .toggleLi{
+  .toggleLi {
     display: none;
   }
-  .toggleLiMob{
+  .toggleLiMob {
     display: block;
   }
 }
