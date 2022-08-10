@@ -16,7 +16,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 56px;
     margin-bottom: 3rem;
 }
 .desc{
@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
     .title{
-        font-size: 50px;
+        font-size: 40px;
     }
     .desc{
         font-size: 18px;
@@ -40,11 +40,11 @@
         padding: 0 2rem;
     }
     .title{
-        font-size: 40px;
+        font-size: 35px;
         margin-bottom: 2rem;
     }
     .desc{
-        font-size: 16px;
+        font-size: 18px;
     }
     .img{
         margin-bottom: 2rem;
