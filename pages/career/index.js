@@ -61,7 +61,9 @@ function Career(){
       <div className={styles.container}>
         <div className={styles.info}>
           <div className={styles.left}>
+          <div className={styles.heading_container}> 
             <p className={styles.heading}>Career</p>
+          </div>
             <p className={styles.desc}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error
               repellendus nihil eveniet ut sit? Qui repellat, maxime atque alias

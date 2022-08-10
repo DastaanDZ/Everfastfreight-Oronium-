@@ -104,7 +104,9 @@ export default function ServicePage() {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.left}>
+        <div className={styles.heading_container}> 
           <p className={styles.heading}>{data[index].service}</p>
+        </div>
           <p className={styles.desc}>{data[index].content}</p>
           <Button1 text="Contact Us" route="/contact" />
         </div>

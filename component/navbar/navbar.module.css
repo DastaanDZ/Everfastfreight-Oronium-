@@ -39,9 +39,9 @@ height: 60.21px;
   box-shadow: 14px 9px 21px -2px #6f6d6d;
   padding: 1.5rem;
   margin-top: 1rem;
-  -webkit-animation: fadein 0.5s ease-in;
-  -moz-animation: fadein 0.5s ease-in;
-  animation: fadein 0.5s ease-in;
+  -webkit-animation: fadein 0.3s ease-in;
+  -moz-animation: fadein 0.3s ease-in;
+  animation: fadein 0.3s ease-in;
 }
 @keyframes fadein {
   0%   { opacity: 0; }
