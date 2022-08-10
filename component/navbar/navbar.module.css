@@ -8,6 +8,12 @@
   font-size: 1rem;
   padding: 0 4rem;
 }
+.navbar_container ul li{
+  height: 2rem;
+}
+.navbar_container ul li:hover{
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
 .logo_container {
   display: flex;
   align-items: center;
