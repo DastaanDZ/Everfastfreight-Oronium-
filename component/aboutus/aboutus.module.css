@@ -37,8 +37,8 @@
 }
 .heading{
     font-family: 'Newsreader', serif;
-    font-size: 3rem;
-    margin-bottom: 1.3rem;
+    font-size: 56px;
+    margin-bottom: 56px;
 }
 .desc{
     font-family: 'DM Sans', sans-serif;
@@ -52,7 +52,7 @@
 
 @media (max-width: 1220px) {
     .heading{
-        font-size: 2.7rem;
+        font-size: 40px;
     }
     .desc{
         font-size: 1rem;
@@ -71,6 +71,9 @@
     .hero{
         width: 300px;
         height: 382.075px;
+    }
+    .heading{
+        margin-bottom: 2rem;
     }
 }
 
@@ -97,14 +100,20 @@
         width: 100%;
         height: 540px;
     }
+    .heading{
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .heading{
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 550px) {
     .heading{
-        font-size: 40px;
+        font-size: 35px;
     }
     .right{
         width: 300px;

@@ -85,7 +85,7 @@
 
 @media (max-width: 768px) {
     .heading{
-        font-size: 45px;
+        font-size: 40px;
         width: 100%;
     }
     .content{
@@ -98,6 +98,6 @@
 
 @media (max-width: 550px) {
     .heading{
-        font-size: 32px;
+        font-size: 40px;
     }
 }

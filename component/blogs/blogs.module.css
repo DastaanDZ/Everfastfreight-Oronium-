@@ -79,6 +79,9 @@
 }
 
 @media (max-width: 1220px) {
+    .heading{
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -100,5 +103,8 @@
 @media (max-width: 550px) {
     .news{
         margin-right: 0px;
+    }
+    .heading{
+        font-size: 35px;
     }
 }

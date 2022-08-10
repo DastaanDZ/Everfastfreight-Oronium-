@@ -27,6 +27,9 @@
 }
 
 @media (max-width: 1220px) {
+    .title{
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -44,4 +47,7 @@
 
 
 @media (max-width: 550px) {
+    .title{
+        font-size: 35px;
+    }
 }
