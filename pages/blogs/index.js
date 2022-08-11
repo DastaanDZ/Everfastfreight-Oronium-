@@ -12,7 +12,7 @@ const index = ({blogs}) => {
 
 export default index
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   const blogsRes = await axios.get(`${API_URL}/api/blogs?populate=*`);
   console.log(blogsRes);

@@ -15,7 +15,7 @@ const Single = ({blogs}) => {
 
 export default Single
 
-export async function getStaticProps({params}){
+export async function getServerSideProps({params}){
     console.log(params.id)
     const blogsRes = await axios.get(`${API_URL}/api/blogs/${params.id}/?populate=*`);
     // console.log('newsRes from getSSprops', newsRes.data)
@@ -26,14 +26,14 @@ export async function getStaticProps({params}){
     }
 }
 
-export async function getStaticPaths(){
-    const blogsRes = await axios.get(`${API_URL}/api/blogs?populate=*`)
-    const paths = blogsRes.data.data.map((blogs)=>{
-        return {params: {id: blogs.id.toString()}}
-    });
+// export async function getServerSideProps(ctx){
+//     const blogsRes = await axios.get(`${API_URL}/api/blogs?populate=*`)
+//     const paths = blogsRes.data.data.map((blogs)=>{
+//         return {params: {id: blogs.id.toString()}}
+//     });
 
-    return{
-        paths,
-        fallback: false,
-    }
-}
+//     return{
+//         paths,
+//         fallback: false,
+//     }
+// }

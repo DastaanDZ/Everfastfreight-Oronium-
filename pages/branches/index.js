@@ -40,7 +40,7 @@ const index = ({ branches }) => {
 
 export default index;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const branchesRes = await axios.get(`${API_URL}/api/branches`);
   // console.log(newsRes);
   return {

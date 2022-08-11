@@ -15,7 +15,7 @@ const Single = ({news}) => {
 
 export default Single
 
-export async function getStaticProps({params}){
+export async function getServerSideProps({params}){
     console.log(params.id)
     const newsRes = await axios.get(`${API_URL}/api/news/${params.id}/?populate=*`);
     // console.log('newsRes from getSSprops', newsRes.data)
@@ -26,14 +26,14 @@ export async function getStaticProps({params}){
     }
 }
 
-export async function getStaticPaths(){
-    const newsRes = await axios.get(`${API_URL}/api/news?populate=*`)
-    const paths = newsRes.data.data.map((news)=>{
-        return {params: {id: news.id.toString()}}
-    });
+// export async function getStaticPaths(){
+//     const newsRes = await axios.get(`${API_URL}/api/news?populate=*`)
+//     const paths = newsRes.data.data.map((news)=>{
+//         return {params: {id: news.id.toString()}}
+//     });
 
-    return{
-        paths,
-        fallback: false,
-    }
-}
+//     return{
+//         paths,
+//         fallback: false,
+//     }
+// }
