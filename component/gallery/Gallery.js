@@ -29,7 +29,7 @@ const index = (props) => {
       {
         breakpoint: 1170,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -79,7 +79,7 @@ const index = (props) => {
               <div key={index} className={styles.img_container}>
                 {console.log(items.attributes.url)}
                 <img
-                  style={{ height: 10, objectFit: "cover" }}
+                  style={{ width: 250, height: 250, objectFit: "cover" }}
                   src={items.attributes.url}
                   alt=""
                 />
