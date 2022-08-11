@@ -154,6 +154,7 @@ line-height: 23px;
 	display: flex;
 	width: 70%;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .address{
 	width: 50%;
@@ -214,6 +215,9 @@ line-height: 23px;
 	}
 	.container{
 		padding: 0 2rem;
+	}
+	.phone_social_container{
+		width: 100%;
 	}
 }
 

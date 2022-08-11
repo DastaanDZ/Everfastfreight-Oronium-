@@ -34,19 +34,12 @@ const Navbar = () => {
             <img src={logo.src} className={styles.logo} alt="" />
           </div>
         </Link>
-        <div
-          onMouseOut={() => {
-            setToggle(false);
-          }}
-          onClick={() => {
-            setToggle(!toggle);
-          }}
-          onMouseOver={() => {
-            setToggle(!toggle);
-          }}
-          className={styles.close}
-        >
-          <GiHamburgerMenu onClick={() => {}} />
+        <div className={styles.close}>
+          <GiHamburgerMenu
+            onClick={() => {
+              setToggle(!toggle);
+            }}
+          />
         </div>
         <ul className={styles.ul} style={style1}>
           <div className={styles.header}>
@@ -57,173 +50,112 @@ const Navbar = () => {
               }}
             />
           </div>
-          <Link href="/">
-            <li
-              className={styles.li}
-              onClick={() => {
+          <Link href='/'> 
+          <li className={styles.li} onClick={() => {
                 setToggle(!toggle);
-              }}
-            >
-              Home
-            </li>
+              }}>Home</li>
           </Link>
           <li className={styles.li}>
             <p className={styles.services_li}>
-              <p
-                onClick={() => {
-                  setToggleLi(!toggleLi);
-                  console.log("sd");
-                }}
-                onMouseEnter={() => setToggleLi(true)}
-                className={styles.services}
-              >
-                Services
-              </p>
-              {/* <div className={styles.toggleLi}>
-                {toggleLi ? (
-                  <BiDownArrow
-                    className={styles.down_arrow}
-                    onClick={() => setToggleLi(!toggleLi)}
-                  />
-                ) : (
-                  <BiUpArrow
-                    className={styles.down_arrow}
-                    onClick={() => setToggleLi(!toggleLi)}
-                  />
-                )}
-              </div> */}
-              <div className={styles.toggleLiMob}>
-                {toggleLiMob ? (
-                  <BiDownArrow
-                    className={styles.down_arrow_mob}
-                    onClick={() => setToggleLiMob(!toggleLiMob)}
-                  />
-                ) : (
-                  <BiUpArrow
-                    className={styles.down_arrow_mob}
-                    onClick={() => setToggleLiMob(!toggleLiMob)}
-                  />
-                )}
+              <p className={styles.services}>Services</p>
+              <div className={styles.toggleLi}> 
+              {toggleLi ? (
+                <BiDownArrow
+                  className={styles.down_arrow}
+                  onClick={() => setToggleLi(!toggleLi)}
+                />
+              ) : (
+                <BiUpArrow
+                  className={styles.down_arrow}
+                  onClick={() => setToggleLi(!toggleLi)}
+                />
+              )}
+              </div>
+              <div className={styles.toggleLiMob}> 
+              {toggleLiMob ? (
+                <BiDownArrow
+                  className={styles.down_arrow_mob}
+                  onClick={() => setToggleLiMob(!toggleLiMob)}
+                />
+              ) : (
+                <BiUpArrow
+                  className={styles.down_arrow_mob}
+                  onClick={() => setToggleLiMob(!toggleLiMob)}
+                />
+              )}
               </div>
             </p>
             <div
-              onMouseOut={() => {
-                setToggleLi(false);
-              }}
-              onMouseOver={() => setToggleLi(true)}
-              onMouseEnter={() => setToggleLi(true)}
-              className={styles.dropdown_services}
-              style={style3}
-            >
+              className={styles.dropdown_services} style={style3}>
               <ul className={styles.dropdown_services_ul}>
-                <Link href="/services/air-freight">
-                  <li onClick={() => setToggleLi(!toggleLi)}>Air Freight</li>
-                </Link>
-                <Link href="/services/sea-freight">
-                  <li onClick={() => setToggleLi(!toggleLi)}>Ocean freight</li>
-                </Link>
-                <Link href="/services/warehousing">
-                  <li onClick={() => setToggleLi(!toggleLi)}>Warehousing</li>
-                </Link>
-                <Link href="/services/custom-brokerage">
-                  <li onClick={() => setToggleLi(!toggleLi)}>
-                    Customs Brokerage
-                  </li>
-                </Link>
-                <Link href="/services/door-to-door">
-                  <li onClick={() => setToggleLi(!toggleLi)}>
-                    Door to Door Services
-                  </li>
-                </Link>
-                <Link href="/services/road-transport">
-                  <li onClick={() => setToggleLi(!toggleLi)}>Road Transport</li>
-                </Link>
-                <Link href="/services/project-forwarding">
-                  <li onClick={() => setToggleLi(!toggleLi)}>
-                    Project Forwarding
-                  </li>
-                </Link>
+              <Link href='/services/air-freight'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}} >Air Freight</li>
+              </Link>
+                <Link href='/services/sea-freight'> 
+                <li oonClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Ocean freight</li>
+              </Link>
+                <Link href='/services/warehousing'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Warehousing</li>
+              </Link>
+                <Link href='/services/custom-brokerage'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Customs Brokerage</li>
+              </Link>
+                <Link href='/services/door-to-door'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Door to Door Services</li>
+              </Link>
+                <Link href='/services/road-transport'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Road Transport</li>
+              </Link>
+                <Link href='/services/project-forwarding'> 
+                <li onClick={() => {setToggleLi(!toggleLi),setToggle(!toggle)}}>Project Forwarding</li>
+              </Link>
               </ul>
             </div>
             <div className={styles.dropdown_services_mob} style={style2}>
               <ul className={styles.dropdown_services_mob_ul}>
-                <Link href="/services/air-freight">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Air Freight
-                  </li>
-                </Link>
-                <Link href="/services/sea-freight">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Ocean freight
-                  </li>
-                </Link>
-                <Link href="/services/warehousing">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Warehousing
-                  </li>
-                </Link>
-                <Link href="/services/custom-brokerage">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Customs Brokerage
-                  </li>
-                </Link>
-                <Link href="/services/door-to-door">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Door to Door Services
-                  </li>
-                </Link>
-                <Link href="/services/road-transport">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Road Transport
-                  </li>
-                </Link>
-                <Link href="/services/project-forwarding">
-                  <li onClick={() => setToggleLiMob(!toggleLiMob)}>
-                    Project Forwarding
-                  </li>
-                </Link>
+              <Link href='/services/air-freight'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Air Freight</li>
+              </Link>
+                <Link href='/services/sea-freight'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Ocean freight</li>
+              </Link>
+                <Link href='/services/warehousing'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Warehousing</li>
+              </Link>
+                <Link href='/services/custom-brokerage'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Customs Brokerage</li>
+              </Link>
+                <Link href='/services/door-to-door'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Door to Door Services</li>
+              </Link>
+                <Link href='/services/road-transport'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Road Transport</li>
+              </Link>
+                <Link href='/services/project-forwarding'> 
+                <li onClick={() => {setToggleLiMob(!toggleLiMob),setToggle(!toggle)}}>Project Forwarding</li>
+              </Link>
               </ul>
             </div>
           </li>
           <Link href="/aboutus">
-            <li
-              className={styles.li}
-              onClick={() => {
+            <li className={styles.li} onClick={() => {
                 setToggle(!toggle);
-              }}
-            >
-              About
-            </li>
+              }}>About</li>
           </Link>
           <Link href="/branches">
-            <li
-              className={styles.li}
-              onClick={() => {
+            <li className={styles.li} onClick={() => {
                 setToggle(!toggle);
-              }}
-            >
-              Branches
-            </li>
+              }}>Branches</li>
           </Link>
           <Link href="/career">
-            <li
-              className={styles.li}
-              onClick={() => {
+            <li className={styles.li} onClick={() => {
                 setToggle(!toggle);
-              }}
-            >
-              Career
-            </li>
+              }}>Career</li>
           </Link>
           <Link href="/contact">
-            <li
-              className={styles.li}
-              onClick={() => {
+            <li className={styles.li} onClick={() => {
                 setToggle(!toggle);
-              }}
-            >
-              Contact
-            </li>
+              }}>Contact</li>
           </Link>
         </ul>
       </div>

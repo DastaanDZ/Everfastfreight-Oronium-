@@ -42,10 +42,13 @@ li {
   /* align-items: center; */
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
+<<<<<<< HEAD
   height: 2rem;
 }
 li:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+=======
+>>>>>>> 15dee84a61a3ce141c5c5d32ccad6a74f3f62f37
 }
 /* li:last-child{
   margin-bottom: 0px;
@@ -90,19 +93,28 @@ p {
 
 h1 {
   font-size: 56px;
+
   font-family: "Newsreader", serif;
   font-weight: 400 !important;
+
+
+
 }
 h2 {
   font-size: 40px;
+
   font-family: "Newsreader", serif;
   font-weight: 400 !important;
+
+
 }
 
 h3 {
   font-size: 30px;
+
   font-family: "Newsreader", serif;
   font-weight: 400 !important;
+
 }
 
 @media (max-width: 1220px) {
