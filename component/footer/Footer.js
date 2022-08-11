@@ -56,19 +56,19 @@ const Footer = () => {
           <div className={styles.part3}>
             <p className={styles.heading}>Social</p>
             <ul className={styles.ul}>
-              <a href="https://www.facebook.com/EVERFASTINDIA/">
+              <a href="https://www.facebook.com/Everfastfreight/">
                 <li className={styles.li}>
                   <BsFacebook />{" "}
                   <p className={styles.social_media_icon}>Facebook</p>
                 </li>
               </a>
-              <a href="https://twitter.com/EverfastF">
+              <a href=" https://twitter.com/EverfastFreight">
                 <li className={styles.li}>
                   <BsTwitter />{" "}
                   <p className={styles.social_media_icon}>Twitter</p>
                 </li>
               </a>
-              <a href="https://www.linkedin.com/in/everfast-freight-aa4752119/?originalSubdomain=in">
+              <a href=" https://www.linkedin.com/company/everfast-freight-forwarders-pvt-ltd1/">
                 <li className={styles.li}>
                   <BsLinkedin />{" "}
                   <p className={styles.social_media_icon}>Linkedin</p>
@@ -80,7 +80,7 @@ const Footer = () => {
                   <p className={styles.social_media_icon}>Youtube</p>
                 </li>
               </a>
-              <a>
+              <a href="https://www.instagram.com/everfast.freight/?hl=en">
                 <li className={styles.li}>
                   <BsInstagram />{" "}
                   <p className={styles.social_media_icon}>Instagram</p>

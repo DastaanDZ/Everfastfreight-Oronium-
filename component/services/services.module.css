@@ -17,6 +17,7 @@
   border-radius: 50px;
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
+  justify-content: center;
   cursor: pointer;
 }
 .info {

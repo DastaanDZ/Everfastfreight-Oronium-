@@ -53,9 +53,9 @@ export default function ServicePage() {
     {
       img: "",
       service: "Door to door",
-      content: `Now when most commodities are brought right to your doorstep, what about a company that picks up from your doorstep too! Everfast Freight Forwarders does just that, we provide door-to-door services for sending parcels and large consignment across worldwide. 
+      content: `Now when most commodities are brought right to your doorstep, what about a company that picks up from your doorstep too! Everfast Freight Forwarders does just that, we provide door-to-door services for sending parcels and large consignments  across worldwide. 
 
-      We carry with care and handle every consignment as if it's our own. We offer you fast and efficient door to door delivery services. Our Multi-Modal transport system is capable of moving consignments from your doorstep to the final destination across the world. 
+      We carry with care and handle every consignments  as if it's our own. We offer you fast and efficient door to door delivery services. Our Multi-Modal transport system is capable of moving consignments from your doorstep to the final destination across the world. 
       
       Further, with our widespread network, we make sure your things are safe and secure during transit and most importantly delivered on time. Our door to door delivery services are reliable and cost effective. We offer these services for various industry verticals
       `,
@@ -63,7 +63,7 @@ export default function ServicePage() {
     {
       img: "",
       service: "Road Transport ",
-      content: `NEverfast Freight Forwarders road feeder services specializes in performing value-added, and time definite services to ensure ultimate satisfaction for our customers through integrated tracking tools and with network of quality trucking partners in every region.
+      content: `Everfast Freight Forwarders road feeder services specializes in performing value-added, and time definite services to ensure ultimate satisfaction for our customers through integrated tracking tools and with network of quality trucking partners in every region.
 
       Everfast freight forwarders capabilities are optimized to get your cargo safely to its destination on schedule. We set a very high bar for our service providers, ensuring the most stringent performance, security, equipment and technology standards are applied to your shipment. 
       
@@ -104,9 +104,9 @@ export default function ServicePage() {
     <div className={styles.container}>
       <div className={styles.info}>
         <div className={styles.left}>
-        <div className={styles.heading_container}> 
-          <h2>{data[index].service}</h2>
-        </div>
+          <div className={styles.heading_container}>
+            <h2>{data[index].service}</h2>
+          </div>
           <p className={styles.desc}>{data[index].content}</p>
           <Button1 text="Contact Us" route="/contact" />
         </div>
