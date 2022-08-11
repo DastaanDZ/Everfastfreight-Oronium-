@@ -17,9 +17,15 @@ import Cors from "cors";
   
  export default async function handler(req, res) { 
    await runMiddleware( req, res, cors); 
-   const url = getPageUrl(req.body.model, req.body.entry); 
+
+   const  s= `${req.body}`
+   let t=JSON.parse(s)
+  //  console.log(typeof req.body);
+  //  console.log(req.body.model);
+
+   const url = getPageUrl(t.model, t.entry); 
    try { 
-    console.log(req.query);
+    console.log(req.query,req.body.model, req.body.entry);
      if (req.query.secret!= process.env.REVALIDATE_SECRET_KEY) {
       //  console.log('inva')
        return res.status(500).send("Invalid secret key"); 
@@ -68,3 +74,5 @@ import Cors from "cors";
         break;
    }
  }
+
+ 
