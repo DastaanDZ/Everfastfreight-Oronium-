@@ -35,13 +35,7 @@ const Navbar = () => {
           </div>
         </Link>
         <div
-          onMouseOut={() => {
-            setToggle(false);
-          }}
           onClick={() => {
-            setToggle(!toggle);
-          }}
-          onMouseOver={() => {
             setToggle(!toggle);
           }}
           className={styles.close}
@@ -93,7 +87,7 @@ const Navbar = () => {
                 )}
               </div> */}
               <div className={styles.toggleLiMob}>
-                {toggleLiMob ? (
+                {/* {toggleLiMob ? (
                   <BiDownArrow
                     className={styles.down_arrow_mob}
                     onClick={() => setToggleLiMob(!toggleLiMob)}
@@ -103,7 +97,7 @@ const Navbar = () => {
                     className={styles.down_arrow_mob}
                     onClick={() => setToggleLiMob(!toggleLiMob)}
                   />
-                )}
+                )} */}
               </div>
             </p>
             <div
