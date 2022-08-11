@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import styles from './gallery.module.css'
-import hero from '../../assets/images/warehouse.png'
-import n1 from '../../assets/images/warehouse.png'
-import Head from 'next/head'
-import { BsArrowRight,BsArrowLeft } from 'react-icons/bs';
+import styles from "./gallery.module.css";
+import hero from "../../assets/images/warehouse.png";
+import n1 from "../../assets/images/warehouse.png";
+import Head from "next/head";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,13 +11,12 @@ import "slick-carousel/slick/slick-theme.css";
 import { API_URL } from "../../utils/urls";
 
 const index = (props) => {
+  console.log("url", props.props[0].attributes.Memories.data[0].attributes.url);
+  const gallery = props.props[0].attributes.Memories.data;
+  console.log("gallery", gallery);
 
-  console.log('url',props.props[0].attributes.Memories.data[0].attributes.url)
-  const gallery = props.props[0].attributes.Memories.data
-  console.log('gallery', gallery)
-
-  const ref  = useRef(null)
-  console.log(ref)
+  const ref = useRef(null);
+  console.log(ref);
 
   var settings = {
     dots: false,
@@ -30,62 +29,67 @@ const index = (props) => {
       {
         breakpoint: 1170,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
-        }
+          dots: true,
+        },
       },
       {
         breakpoint: 930,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2
-        }
+          initialSlide: 2,
+        },
       },
       {
         breakpoint: 624,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
     <>
-    <div className={styles.container}>
-    <div className={styles.title}> 
-        <h2>Gallery</h2>
-        <div className={styles.learnmore}> 
-            <div className={styles.more_news_circle} onClick = {() => ref.current.slickPrev()}>
-            <BsArrowLeft/>
+      <div className={styles.container}>
+        <div className={styles.title}>
+          <h2>Gallery</h2>
+          <div className={styles.learnmore}>
+            <div
+              className={styles.more_news_circle}
+              onClick={() => ref.current.slickPrev()}
+            >
+              <BsArrowLeft />
             </div>
-            <div className={styles.more_news_circle} onClick = {() => ref.current.slickNext()}>
-            <BsArrowRight/>
+            <div
+              className={styles.more_news_circle}
+              onClick={() => ref.current.slickNext()}
+            >
+              <BsArrowRight />
             </div>
-            </div>
-    </div>
-    <Slider 
-    ref={ref}
-    {...settings}>
-              {gallery.map((items, index) => {
-            return(
+          </div>
+        </div>
+        <Slider ref={ref} {...settings}>
+          {gallery.map((items, index) => {
+            return (
               <div key={index} className={styles.img_container}>
-              {console.log(items.attributes.url)}
-  <img style={{ width: 250, height: 250, objectFit: 'cover'}} src={items.attributes.url} alt="" />
-</div>
-            )
-        })}
-    </Slider>
-
-    </div>
+                {console.log(items.attributes.url)}
+                <img
+                  style={{ height: 10, objectFit: "cover" }}
+                  src={items.attributes.url}
+                  alt=""
+                />
+              </div>
+            );
+          })}
+        </Slider>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default index
-
-
+export default index;

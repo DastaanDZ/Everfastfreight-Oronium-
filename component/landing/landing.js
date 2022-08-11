@@ -11,7 +11,8 @@ const Landing = () => {
       <div className={styles.title}>
         <p className={styles.heading}>A leader in global freight business</p>
         <p className={styles.content}>
-          We Don't Just <u>Deliver Freight</u> , But <u>Peace Of Mind</u>
+          We Don't Just Deliver Freight, But{" "}
+          <span className={styles.textHead}>Peace Of Mind</span>
         </p>
         <div className={styles.button_container}>
           <Link href="/contact">

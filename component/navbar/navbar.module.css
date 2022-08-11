@@ -51,6 +51,7 @@
   -webkit-animation: fadein 0.3s ease-in;
   -moz-animation: fadein 0.3s ease-in;
   animation: fadein 0.3s ease-in;
+  z-index: 200;
 }
 @keyframes fadein {
   0% {
