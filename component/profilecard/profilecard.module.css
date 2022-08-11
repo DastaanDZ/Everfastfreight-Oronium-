@@ -7,16 +7,16 @@
   height: 256px;
 }
 .name {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 25px;
-color: rgba(0, 0, 0, 0.6);
+  font-family: "DM Sans" !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .desc {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-color: rgba(0, 0, 0, 0.6);
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }

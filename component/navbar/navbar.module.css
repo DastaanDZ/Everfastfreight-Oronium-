@@ -12,10 +12,11 @@
   display: flex;
   align-items: center;
   z-index: 1000;
+  cursor: pointer;
 }
 .logo {
-  width: 200.21px;
-  height: 60.21px;
+  height: 64.21px;
+  object-fit: cover;
 }
 .ul {
   display: flex;

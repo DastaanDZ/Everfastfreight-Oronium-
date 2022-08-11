@@ -4,7 +4,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200;6..72,300;6..72,400&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 html,
@@ -44,7 +44,7 @@ li {
   margin-right: 0.5rem;
   height: 2rem;
 }
-li:hover{
+li:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 /* li:last-child{
@@ -52,7 +52,7 @@ li:hover{
 } */
 p {
   margin: 0px;
-  line-height: 130%;
+  line-height: 140%;
 }
 .swiper {
   width: 100%;
@@ -84,74 +84,71 @@ p {
   color: black !important;
   width: 20px;
 }
-.space{
+.space {
   margin-bottom: 2.5rem;
 }
 
-
-h1{
+h1 {
   font-size: 56px;
-  font-family: 'Newsreader', serif;
-  font-weight: 200;
-
+  font-family: "Newsreader", serif;
+  font-weight: 400 !important;
 }
-h2{
+h2 {
   font-size: 40px;
-  font-family: 'Newsreader', serif;
-  font-weight: 200;
+  font-family: "Newsreader", serif;
+  font-weight: 400 !important;
 }
 
-h3{
+h3 {
   font-size: 30px;
-  font-family: 'Newsreader', serif;
-  font-weight: 200;
+  font-family: "Newsreader", serif;
+  font-weight: 400 !important;
 }
 
 @media (max-width: 1220px) {
-  h1{
+  h1 {
     font-size: 50px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
-  h3{
+  h3 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1024px) {
-  h1{
+  h1 {
     font-size: 45px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
 
 @media (max-width: 900px) {
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  h1{
+  h1 {
     font-size: 38px;
   }
-  h2{
+  h2 {
     font-size: 30px;
   }
 }
 
-
 @media (max-width: 550px) {
-  h1{
+  h1 {
     font-size: 35px;
   }
-  h2{
+  h2 {
     font-size: 28px;
   }
-  h3{
+  h3 {
     font-size: 22px;
   }
 }
