@@ -21,7 +21,7 @@ import Cors from "cors";
    try { 
     console.log(req.query);
      if (req.query.secret!= process.env.REVALIDATE_SECRET_KEY) {
-       console.log('inva')
+      //  console.log('inva')
        return res.status(500).send("Invalid secret key"); 
       }
      else { console.log('dskd')
