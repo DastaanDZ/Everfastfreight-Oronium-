@@ -40,13 +40,13 @@ li {
   /* display: inline-flex; */
   /* display: flex; */
   /* align-items: center; */
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem;
   margin-right: 0.5rem;
 
-  height: 2rem;
+  height: 2rem; */
 }
 li:hover {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  /* border-bottom: 2px solid rgba(0, 0, 0, 0.6); */
 }
 /* li:last-child{
   margin-bottom: 0px;

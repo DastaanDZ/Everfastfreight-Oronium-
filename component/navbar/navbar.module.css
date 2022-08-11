@@ -11,7 +11,7 @@
 .navbar_container ul li {
   height: 2rem;
 }
-.navbar_container ul li:hover {
+.navbar_container > ul li:hover {
   border-bottom: 2px solid rgba(0, 0, 0, 0.6);
 }
 .logo_container {
